@@ -4,7 +4,7 @@ import { match } from "@formatjs/intl-localematcher";
 import Negotiator from "negotiator";
 
 const locales = ["es", "en"];
-const defaultLocale = "es";
+const defaultLocale = "en";
 
 function getLocale(request: NextRequest): string {
   const headers = {
