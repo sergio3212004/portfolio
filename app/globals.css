@@ -1,17 +1,19 @@
 @import "tailwindcss";
 
+@variant dark (&:where(.dark, .dark *));
+
 @theme inline {
-  --color-dsg-50: #eef5f7;
-  --color-dsg-100: #ddeaee;
-  --color-dsg-200: #bbd6dd;
-  --color-dsg-300: #98c1cd;
-  --color-dsg-400: #76adbc;
-  --color-dsg-500: #5498ab;
-  --color-dsg-600: #437a89;
-  --color-dsg-700: #325b67;
-  --color-dsg-800: #223d44;
-  --color-dsg-900: #111e22;
-  --color-dsg-950: #0c1518;
+  --color-dsg-50: #f0f4f6;
+  --color-dsg-100: #dce5e8;
+  --color-dsg-200: #b9cbd1;
+  --color-dsg-300: #93adb7;
+  --color-dsg-400: #6f8f9b;
+  --color-dsg-500: #51717d;
+  --color-dsg-600: #3f5862;
+  --color-dsg-700: #2f4249;
+  --color-dsg-800: #1d292e;
+  --color-dsg-900: #131b1e;
+  --color-dsg-950: #0b1114;
 
   --color-vc-50: #fffbe5;
   --color-vc-100: #fff7cc;
@@ -63,56 +65,53 @@
 
   --color-background: var(--color-dsg-50);
   --color-surface: var(--color-dsg-100);
+  --color-surface-card: #ffffff;
   --color-border: var(--color-dsg-200);
   --color-foreground: var(--color-dsg-950);
   --color-muted: var(--color-dsg-600);
 
-  --color-primary: var(--color-hb-500);
-  --color-primary-foreground: var(--color-dsg-50);
-  --color-accent: var(--color-vc-500);
-  --color-accent-foreground: var(--color-dsg-950);
-
-  --color-danger: var(--color-nb-500);
-  --color-danger-foreground: var(--color-vc-50);
-  --color-warning: var(--color-br-500);
-  --color-warning-foreground: var(--color-vc-50);
+  --color-primary: var(--color-vc-500);
+  --color-primary-foreground: var(--color-dsg-950);
 }
 
 .dark {
-  --color-background: var(--color-dsg-950);
-  --color-surface: var(--color-dsg-900);
-  --color-border: var(--color-dsg-700);
-  --color-foreground: var(--color-dsg-50);
-  --color-muted: var(--color-dsg-400);
+  --color-background: #0d1316;
+  --color-surface: #121a1e;
+  --color-surface-card: #152026;
+  --color-border: #1e2c33;
+  --color-foreground: #edf3f5;
+  --color-muted: #889fa8;
 
-  --color-primary: var(--color-vc-400);
-  --color-primary-foreground: var(--color-dsg-950);
-  --color-accent: var(--color-hb-400);
-  --color-accent-foreground: var(--color-dsg-950);
-
-  --color-danger: var(--color-nb-400);
-  --color-danger-foreground: var(--color-dsg-950);
-  --color-warning: var(--color-br-400);
-  --color-warning-foreground: var(--color-dsg-950);
+  --color-primary: var(--color-vc-500);
+  --color-primary-foreground: #0b1114;
 }
 
 :root {
-  --font-heading: var(--font-fraunces);
+  --font-heading: var(--font-inter);
   --font-body: var(--font-inter);
   --font-code: var(--font-jetbrains-mono);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: var(--font-body);
   background-color: var(--color-background);
   color: var(--color-foreground);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  letter-spacing: -0.01em;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: var(--font-heading);
+  letter-spacing: -0.03em;
 }
 
 code,
