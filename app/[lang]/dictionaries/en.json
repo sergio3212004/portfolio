@@ -1,5 +1,90 @@
 {
-  "products": {
-    "cart": "Add to Cart"
+  "nav": {
+    "brand": "Sergio",
+    "greeting": "👋 Hi, I'm Sergio",
+    "home": "Home",
+    "about": "About me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact",
+    "downloadCv": "Download CV"
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light mode",
+    "dark": "Dark mode"
+  },
+  "language": {
+    "toggle": "Change language",
+    "current": "English",
+    "en": "English",
+    "es": "Spanish"
+  },
+  "hero": {
+    "greeting": "HELLO I'M",
+    "nameFirst": "Sergio",
+    "nameLast": "Martínez",
+    "rolePrefix": "A Passionate",
+    "roleHighlight": "Web & Software",
+    "roleSuffix": "Developer",
+    "description": "I engineer high-caliber web applications with solid architecture, clean maintainable code, and a refined, sober visual aesthetic.",
+    "ctaSayHello": "Say Hello",
+    "ctaDownloadCv": "Download CV"
+  },
+  "about": {
+    "tag": "GET TO KNOW ME",
+    "title": "About me",
+    "subtitle": "Combining engineering rigor with design sensitivity.",
+    "bio1": "With over 3 years of full-stack engineering experience, I specialize in architecting and delivering digital products from the system core to polished interface micro-interactions.",
+    "bio2": "My approach emphasizes visual restraint, blazing performance, accessibility, and long-term maintainability.",
+    "stat1Number": "03+",
+    "stat1Label": "Years of Experience",
+    "stat2Number": "25+",
+    "stat2Label": "Completed Projects",
+    "stat3Number": "100%",
+    "stat3Label": "Quality Commitment",
+    "locationLabel": "Location",
+    "locationValue": "Remote / Worldwide"
+  },
+  "skills": {
+    "tag": "SPECIALTIES",
+    "title": "Skills & Technologies",
+    "subtitle": "Curated technologies used to build resilient and scalable digital systems.",
+    "frontend": "Frontend & Interfaces",
+    "backend": "Backend & Architecture",
+    "databases": "Databases & Cloud",
+    "tools": "Workflow & Tooling"
+  },
+  "projects": {
+    "tag": "PORTFOLIO",
+    "title": "Selected Works",
+    "subtitle": "A collection of projects where architecture meets deliberate design.",
+    "viewProject": "Live View",
+    "viewCode": "Source Code"
+  },
+  "experience": {
+    "tag": "RESUME",
+    "title": "Experience & Career",
+    "subtitle": "My journey building robust, enterprise-grade software.",
+    "present": "Present"
+  },
+  "contact": {
+    "tag": "GET IN TOUCH",
+    "title": "Have a project in mind?",
+    "subtitle": "Let's discuss your next project, product development, or technical collaboration.",
+    "nameLabel": "Your Name",
+    "namePlaceholder": "What is your name?",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "name@example.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell me about your project details...",
+    "submit": "Send Message",
+    "directContact": "Direct Contact",
+    "email": "sergiom@example.com"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "tagline": "Crafted with restraint and technical precision."
   }
 }

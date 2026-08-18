@@ -1,5 +1,90 @@
 {
-  "products": {
-    "cart": "Añade al carrito"
+  "nav": {
+    "brand": "Sergio",
+    "greeting": "👋 Hola, soy Sergio",
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "experience": "Trayectoria",
+    "contact": "Contacto",
+    "downloadCv": "Descargar CV"
+  },
+  "theme": {
+    "toggle": "Cambiar tema",
+    "light": "Modo claro",
+    "dark": "Modo oscuro"
+  },
+  "language": {
+    "toggle": "Cambiar idioma",
+    "current": "Español",
+    "en": "English",
+    "es": "Español"
+  },
+  "hero": {
+    "greeting": "HOLA, SOY",
+    "nameFirst": "Sergio",
+    "nameLast": "Martínez",
+    "rolePrefix": "Un Desarrollador",
+    "roleHighlight": "Web & Software",
+    "roleSuffix": "Apasionado",
+    "description": "Diseño y construyo soluciones web de alto calibre, con una arquitectura sólida, código limpio y una experiencia visual sobria y elegante.",
+    "ctaSayHello": "Decir Hola",
+    "ctaDownloadCv": "Descargar CV"
+  },
+  "about": {
+    "tag": "CONÓCEME",
+    "title": "Sobre mí",
+    "subtitle": "Combinando rigor en ingeniería con sensibilidad de diseño.",
+    "bio1": "Con más de 3 años de experiencia en desarrollo web full-stack, me especializo en concebir productos digitales desde los cimientos arquitectónicos hasta la última microinteracción en la interfaz.",
+    "bio2": "Mi enfoque prioriza la sobriedad visual, la velocidad de carga, la accesibilidad y la mantenibilidad a largo plazo.",
+    "stat1Number": "03+",
+    "stat1Label": "Años de Experiencia",
+    "stat2Number": "25+",
+    "stat2Label": "Proyectos Culminados",
+    "stat3Number": "100%",
+    "stat3Label": "Compromiso de Calidad",
+    "locationLabel": "Ubicación",
+    "locationValue": "Remoto / Disponible a nivel global"
+  },
+  "skills": {
+    "tag": "ESPECIALIDADES",
+    "title": "Habilidades & Tecnologías",
+    "subtitle": "Tecnologías seleccionadas con las que construyo soluciones eficientes y escalables.",
+    "frontend": "Frontend & Interfaces",
+    "backend": "Backend & Arquitectura",
+    "databases": "Bases de Datos & Cloud",
+    "tools": "Metodología & Herramientas"
+  },
+  "projects": {
+    "tag": "PORTFOLIO",
+    "title": "Trabajos Seleccionados",
+    "subtitle": "Una recopilación de proyectos donde la arquitectura y el diseño se encuentran.",
+    "viewProject": "Ver proyecto",
+    "viewCode": "Código fuente"
+  },
+  "experience": {
+    "tag": "CURRÍCULUM",
+    "title": "Trayectoria & Experiencia",
+    "subtitle": "Mi recorrido profesional construyendo software robusto.",
+    "present": "Presente"
+  },
+  "contact": {
+    "tag": "HABLEMOS",
+    "title": "¿Tienes una idea en mente?",
+    "subtitle": "Conversemos sobre tu próximo proyecto, producto o colaboración profesional.",
+    "nameLabel": "Tu nombre",
+    "namePlaceholder": "¿Cómo te llamas?",
+    "emailLabel": "Correo electrónico",
+    "emailPlaceholder": "correo@ejemplo.com",
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "Cuéntame los detalles de tu proyecto...",
+    "submit": "Enviar Mensaje",
+    "directContact": "Contacto Directo",
+    "email": "sergiom@example.com"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "tagline": "Diseñado con sobriedad y precisión técnica."
   }
 }
