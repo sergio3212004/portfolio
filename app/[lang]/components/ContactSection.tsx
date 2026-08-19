@@ -5,6 +5,9 @@ import Section from "./Section";
 import Card from "./Card";
 import Button from "./Button";
 import { CheckCircleIcon } from "@heroicons/react/24/outline";
+import { SiGithub } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa6";
+import { HiOutlineMail } from "react-icons/hi";
 
 export interface ContactSectionProps {
   dict: {
@@ -61,23 +64,24 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ dict }) => {
             <span className="text-xs font-mono text-dsg-500 dark:text-dsg-400 uppercase tracking-wider">
               Social Channels
             </span>
-            <div className="flex items-center gap-4 text-xs font-mono">
+            <div className="flex items-center gap-4">
               <a
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-dsg-700 dark:text-dsg-300 hover:text-hb-500 dark:hover:text-hb-400 transition-colors"
+                aria-label="GitHub"
               >
-                GitHub
+                <SiGithub className="w-5 h-5" />
               </a>
-              <span className="text-dsg-700">/</span>
               <a
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-dsg-700 dark:text-dsg-300 hover:text-hb-500 dark:hover:text-hb-400 transition-colors"
+                aria-label="LinkedIn"
               >
-                LinkedIn
+                <FaLinkedin className="w-5 h-5" />
               </a>
             </div>
           </Card>

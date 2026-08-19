@@ -1,5 +1,8 @@
 import React from "react";
 import Button from "./Button";
+import { SiGithub } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa6";
+import { HiOutlineMail } from "react-icons/hi";
 
 export interface HeroSectionProps {
   dict: {
@@ -39,8 +42,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ dict }) => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           {/* Left Column: Typography & Call to Action */}
           <div className="lg:col-span-6 flex flex-col justify-center text-left z-10">
-            {/* Small Monospace Greeting */}
-            <div className="flex items-center gap-2 mb-4">
+            {/* Small Monospace Greeting & Status Pill */}
+            <div className="flex flex-wrap items-center gap-3 mb-4">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 dark:bg-emerald-500/15 border border-emerald-500/30 text-[11px] font-mono font-medium text-emerald-700 dark:text-emerald-400 shadow-xs">
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                <span>Disponible para proyectos</span>
+              </div>
               <span className="text-xs font-mono uppercase tracking-[0.25em] text-dsg-500 dark:text-dsg-400 font-semibold">
                 {dict.greeting}
               </span>
@@ -69,7 +76,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ dict }) => {
             </p>
 
             {/* Actions */}
-            <div className="flex flex-wrap items-center gap-4">
+            <div className="flex flex-wrap items-center gap-4 mb-8">
               <Button href="#contact" variant="primary" size="lg">
                 {dict.ctaSayHello}
               </Button>
@@ -81,6 +88,23 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ dict }) => {
               >
                 {dict.ctaDownloadCv}
               </Button>
+            </div>
+
+            {/* Quick Core Tech Strip */}
+            <div className="flex items-center gap-2 text-xs font-mono text-dsg-500 dark:text-dsg-400 pt-4 border-t border-dsg-200/60 dark:border-[#1c2930]">
+              <span className="text-[11px] uppercase tracking-wider text-dsg-400 dark:text-dsg-500 font-semibold">
+                Stack Core:
+              </span>
+              <div className="flex flex-wrap items-center gap-1.5">
+                {["Next.js", "Python", "React", "Node.js", "Laravel", "Tailwind"].map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-2 py-0.5 rounded bg-dsg-200/50 dark:bg-[#152229] border border-dsg-300/50 dark:border-[#20323c] text-[11px] text-dsg-700 dark:text-dsg-300 font-medium"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
 
@@ -146,25 +170,28 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ dict }) => {
           href="https://github.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs font-mono hover:text-hb-600 dark:hover:text-hb-400 transition-colors uppercase tracking-widest [writing-mode:vertical-lr]"
+          className="hover:text-hb-600 dark:hover:text-hb-400 transition-colors"
+          aria-label="GitHub"
         >
-          GitHub
+          <SiGithub className="w-5 h-5" />
         </a>
         <span className="w-px h-6 bg-dsg-300 dark:bg-dsg-700/60" />
         <a
           href="https://linkedin.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs font-mono hover:text-hb-600 dark:hover:text-hb-400 transition-colors uppercase tracking-widest [writing-mode:vertical-lr]"
+          className="hover:text-hb-600 dark:hover:text-hb-400 transition-colors"
+          aria-label="LinkedIn"
         >
-          LinkedIn
+          <FaLinkedin className="w-5 h-5" />
         </a>
         <span className="w-px h-6 bg-dsg-300 dark:bg-dsg-700/60" />
         <a
           href="mailto:sergiom@example.com"
-          className="text-xs font-mono hover:text-hb-600 dark:hover:text-hb-400 transition-colors uppercase tracking-widest [writing-mode:vertical-lr]"
+          className="hover:text-hb-600 dark:hover:text-hb-400 transition-colors"
+          aria-label="Email"
         >
-          Email
+          <HiOutlineMail className="w-5 h-5" />
         </a>
       </div>
     </section>

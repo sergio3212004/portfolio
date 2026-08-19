@@ -33,7 +33,7 @@
     "ctaDownloadCv": "Download CV"
   },
   "about": {
-    "tag": "GET TO KNOW ME",
+    "tag": "01 // GET TO KNOW ME",
     "title": "About me",
     "subtitle": "Combining engineering rigor with design sensitivity.",
     "bio1": "With over 3 years of full-stack engineering experience, I specialize in architecting and delivering digital products from the system core to polished interface micro-interactions.",
@@ -48,29 +48,45 @@
     "locationValue": "Remote / Worldwide"
   },
   "skills": {
-    "tag": "SPECIALTIES",
-    "title": "Skills & Technologies",
-    "subtitle": "Curated technologies used to build resilient and scalable digital systems.",
+    "tag": "02 // TECH STACK & SKILLS",
+    "title": "Technical Stack & Specialties",
+    "subtitle": "Curated technical ecosystem structured across core programming languages, modern styling primitives, and specialized frameworks.",
+    "all": "All",
+    "languages": "Languages & Styling",
+    "languagesDesc": "Foundational programming languages and high-performance layout systems",
+    "pythonFrameworks": "Python Frameworks",
+    "pythonFrameworksDesc": "Rapid API development, microservices, and robust data-driven backends",
+    "jsFrontend": "JavaScript — Frontend",
+    "jsFrontendDesc": "Reactive client interfaces, SPAs, and server-rendered web applications",
+    "jsBackend": "JavaScript — Backend",
+    "jsBackendDesc": "Scalable runtime servers, REST architectures, ORMs, and microservices",
+    "phpFrameworks": "PHP Frameworks",
+    "phpFrameworksDesc": "Enterprise-grade MVC web applications and robust services",
     "frontend": "Frontend & Interfaces",
     "backend": "Backend & Architecture",
     "databases": "Databases & Cloud",
-    "tools": "Workflow & Tooling"
+    "tools": "Workflow & Tooling",
+    "desktopHint": "Hover over any technology for interactive preview",
+    "mobileHint": "Tap a category to filter the tech stack",
+    "viewModeCategory": "By Category",
+    "viewModeGrid": "View All",
+    "techCount": "technologies"
   },
   "projects": {
-    "tag": "PORTFOLIO",
+    "tag": "03 // SELECTED WORKS",
     "title": "Selected Works",
     "subtitle": "A collection of projects where architecture meets deliberate design.",
     "viewProject": "Live View",
     "viewCode": "Source Code"
   },
   "experience": {
-    "tag": "RESUME",
+    "tag": "04 // RESUME & CAREER",
     "title": "Experience & Career",
     "subtitle": "My journey building robust, enterprise-grade software.",
     "present": "Present"
   },
   "contact": {
-    "tag": "GET IN TOUCH",
+    "tag": "05 // GET IN TOUCH",
     "title": "Have a project in mind?",
     "subtitle": "Let's discuss your next project, product development, or technical collaboration.",
     "nameLabel": "Your Name",

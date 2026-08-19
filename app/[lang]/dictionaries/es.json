@@ -33,7 +33,7 @@
     "ctaDownloadCv": "Descargar CV"
   },
   "about": {
-    "tag": "CONÓCEME",
+    "tag": "01 // CONÓCEME",
     "title": "Sobre mí",
     "subtitle": "Combinando rigor en ingeniería con sensibilidad de diseño.",
     "bio1": "Con más de 3 años de experiencia en desarrollo web full-stack, me especializo en concebir productos digitales desde los cimientos arquitectónicos hasta la última microinteracción en la interfaz.",
@@ -48,29 +48,45 @@
     "locationValue": "Remoto / Disponible a nivel global"
   },
   "skills": {
-    "tag": "ESPECIALIDADES",
-    "title": "Habilidades & Tecnologías",
-    "subtitle": "Tecnologías seleccionadas con las que construyo soluciones eficientes y escalables.",
+    "tag": "02 // STACK & HABILIDADES",
+    "title": "Stack Tecnológico & Habilidades",
+    "subtitle": "Ecosistema técnico estructurado por lenguajes, maquetación y frameworks especializados para crear software de alto impacto.",
+    "all": "Todos",
+    "languages": "Lenguajes & Estilos",
+    "languagesDesc": "Lenguajes base y librerías de estilos para maquetación moderna",
+    "pythonFrameworks": "Frameworks Python",
+    "pythonFrameworksDesc": "Desarrollo ágil de APIs, microservicios y plataformas robustas",
+    "jsFrontend": "JavaScript — Frontend",
+    "jsFrontendDesc": "Interfaces reactivas, SPA y aplicaciones renderizadas en servidor",
+    "jsBackend": "JavaScript — Backend",
+    "jsBackendDesc": "Servidores escalables, arquitecturas REST, ORMs y microservicios",
+    "phpFrameworks": "Frameworks PHP",
+    "phpFrameworksDesc": "Desarrollo web MVC robusto y aplicaciones empresariales",
     "frontend": "Frontend & Interfaces",
     "backend": "Backend & Arquitectura",
     "databases": "Bases de Datos & Cloud",
-    "tools": "Metodología & Herramientas"
+    "tools": "Metodología & Herramientas",
+    "desktopHint": "Pasa el cursor sobre cualquier tecnología para interactuar",
+    "mobileHint": "Selecciona una categoría para explorar el stack",
+    "viewModeCategory": "Por Categorías",
+    "viewModeGrid": "Ver Todos",
+    "techCount": "tecnologías"
   },
   "projects": {
-    "tag": "PORTFOLIO",
+    "tag": "03 // PROYECTOS SELECCIONADOS",
     "title": "Trabajos Seleccionados",
     "subtitle": "Una recopilación de proyectos donde la arquitectura y el diseño se encuentran.",
     "viewProject": "Ver proyecto",
     "viewCode": "Código fuente"
   },
   "experience": {
-    "tag": "CURRÍCULUM",
+    "tag": "04 // TRAYECTORIA & CARRERA",
     "title": "Trayectoria & Experiencia",
     "subtitle": "Mi recorrido profesional construyendo software robusto.",
     "present": "Presente"
   },
   "contact": {
-    "tag": "HABLEMOS",
+    "tag": "05 // CONTACTO",
     "title": "¿Tienes una idea en mente?",
     "subtitle": "Conversemos sobre tu próximo proyecto, producto o colaboración profesional.",
     "nameLabel": "Tu nombre",

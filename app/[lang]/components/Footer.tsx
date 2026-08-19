@@ -1,6 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import { NavItem } from "./Navbar";
+import { SiGithub } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa6";
+import { HiOutlineMail } from "react-icons/hi";
 
 export interface FooterProps {
   brand?: string;
@@ -65,8 +68,9 @@ export const Footer: React.FC<FooterProps> = ({
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-hb-400 transition-colors"
+              aria-label="GitHub"
             >
-              GitHub
+              <SiGithub className="w-4 h-4" />
             </a>
             <span>/</span>
             <a
@@ -74,15 +78,17 @@ export const Footer: React.FC<FooterProps> = ({
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-hb-400 transition-colors"
+              aria-label="LinkedIn"
             >
-              LinkedIn
+              <FaLinkedin className="w-4 h-4" />
             </a>
             <span>/</span>
             <a
               href="mailto:sergiom@example.com"
               className="hover:text-hb-400 transition-colors"
+              aria-label="Email"
             >
-              Email
+              <HiOutlineMail className="w-4 h-4" />
             </a>
           </div>
         </div>
