@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
+import Script from "next/script";
+import { cookies } from "next/headers";
 import "../globals.css";
 import { getDictionary, hasLocale } from "./dictionaries";
 import Navbar from "./components/Navbar";
@@ -40,6 +42,10 @@ export default async function RootLayout({
 
   const dict = await getDictionary(lang);
 
+  const cookieStore = await cookies();
+  const theme = cookieStore.get("theme")?.value;
+  const isDark = theme === "dark";
+
   const navItems = [
     { label: dict.nav.home, href: "#home" },
     { label: dict.nav.about, href: "#about" },
@@ -53,20 +59,26 @@ export default async function RootLayout({
     <html
       lang={lang}
       suppressHydrationWarning
-      className={`${inter.variable} ${jetbrainsMono.variable}`}
+      className={`${inter.variable} ${jetbrainsMono.variable}${isDark ? " dark" : ""}`}
     >
       <head>
-        <script
+        <Script
+          id="theme-script"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               (function() {
                 try {
                   var saved = localStorage.getItem('theme');
                   var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                  if (saved === 'dark' || (!saved && prefersDark)) {
+                  var shouldBeDark = saved === 'dark' || (!saved && prefersDark);
+                  if (shouldBeDark) {
                     document.documentElement.classList.add('dark');
                   } else {
                     document.documentElement.classList.remove('dark');
+                  }
+                  if (saved && !document.cookie.includes('theme=')) {
+                    document.cookie = 'theme=' + saved + '; path=/; max-age=31536000';
                   }
                 } catch(e) {}
               })();

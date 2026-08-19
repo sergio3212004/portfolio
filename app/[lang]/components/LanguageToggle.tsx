@@ -1,7 +1,8 @@
 "use client";
 
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import { ES, GB } from "country-flag-icons/react/3x2";
 
 export interface LanguageToggleProps {
   currentLocale: string;
@@ -13,16 +14,36 @@ export interface LanguageToggleProps {
   className?: string;
 }
 
+const locales = [
+  { code: "es" as const, label: "Español", Flag: ES },
+  { code: "en" as const, label: "English", Flag: GB },
+];
+
 export const LanguageToggle: React.FC<LanguageToggleProps> = ({
   currentLocale,
   labels = { en: "EN", es: "ES", toggle: "Change language" },
   className = "",
 }) => {
+  const [open, setOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   const handleLanguageChange = (newLocale: "en" | "es") => {
-    if (newLocale === currentLocale) return;
+    if (newLocale === currentLocale) {
+      setOpen(false);
+      return;
+    }
 
     if (!pathname) {
       router.push(`/${newLocale}`);
@@ -36,38 +57,51 @@ export const LanguageToggle: React.FC<LanguageToggleProps> = ({
       segments.unshift(newLocale);
     }
 
-    const newPath = `/${segments.join("/")}`;
-    router.push(newPath);
+    router.push(`/${segments.join("/")}`);
+    setOpen(false);
   };
 
+  const current = locales.find((l) => l.code === currentLocale) ?? locales[0];
+
   return (
-    <div
-      className={`inline-flex items-center gap-1 p-1 rounded-xl bg-dsg-200/40 dark:bg-dsg-900/60 border border-dsg-200/60 dark:border-dsg-800/60 text-xs font-medium ${className}`}
-    >
+    <div ref={ref} className={`relative inline-flex items-center ${className}`}>
       <button
         type="button"
-        onClick={() => handleLanguageChange("es")}
-        aria-label={labels.es}
-        className={`px-2 py-1 rounded-lg transition-all duration-200 cursor-pointer ${
-          currentLocale === "es"
-            ? "bg-vc-500 text-dsg-950 font-semibold shadow-xs"
-            : "text-dsg-600 dark:text-dsg-400 hover:text-dsg-950 dark:hover:text-dsg-100"
-        }`}
+        onClick={() => setOpen(!open)}
+        aria-label={labels.toggle}
+        className="inline-flex items-center gap-2 px-2 py-1 rounded-lg border text-xs font-medium bg-dsg-200/40 dark:bg-dsg-900/60 border-dsg-200/60 dark:border-dsg-800/60 text-dsg-600 dark:text-dsg-400 cursor-pointer outline-none focus:ring-2 focus:ring-vc-500"
       >
-        ES
+        <current.Flag className="w-5 h-[15px] rounded-sm" />
+        {current.label}
+        <svg
+          className={`w-3 h-3 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
       </button>
-      <button
-        type="button"
-        onClick={() => handleLanguageChange("en")}
-        aria-label={labels.en}
-        className={`px-2 py-1 rounded-lg transition-all duration-200 cursor-pointer ${
-          currentLocale === "en"
-            ? "bg-vc-500 text-dsg-950 font-semibold shadow-xs"
-            : "text-dsg-600 dark:text-dsg-400 hover:text-dsg-950 dark:hover:text-dsg-100"
-        }`}
-      >
-        EN
-      </button>
+
+      {open && (
+        <div className="absolute top-full left-0 mt-1 py-1 rounded-lg border bg-white dark:bg-dsg-900 border-dsg-200/60 dark:border-dsg-800/60 shadow-lg z-50 min-w-[100px]">
+          {locales.map(({ code, label, Flag }) => (
+            <button
+              key={code}
+              type="button"
+              onClick={() => handleLanguageChange(code)}
+              className={`w-full inline-flex items-center gap-2 px-3 py-1.5 text-xs font-medium transition-colors cursor-pointer ${code === currentLocale
+                  ? "bg-vc-500/10 text-vc-600 dark:text-vc-400"
+                  : "text-dsg-600 dark:text-dsg-400 hover:bg-dsg-100 dark:hover:bg-dsg-800"
+                }`}
+            >
+              <Flag className="w-5 h-[15px] rounded-sm" />
+              {label}
+            </button>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
