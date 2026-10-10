@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "about": "About me",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm {name}",
+    "headline": "Computer Engineering Student | Web / Backend / Data Development",
+    "valueProp": "I'm looking for my first IT internship to contribute to software development and keep growing.",
+    "viewProjects": "View projects",
+    "downloadCv": "Download CV"
+  },
+  "projects": {
+    "headline": "Work",
+    "title": "Featured projects",
+    "description": "Best first: a screenshot, the stack, my role and a concrete technical detail in each card."
+  },
+  "about": {
+    "headline": "Profile",
+    "title": "About me",
+    "description": "Who I am, what I study and what I'm looking for."
+  },
+  "skills": {
+    "headline": "Stack",
+    "title": "Technical skills",
+    "description": "Only what I can defend in an interview, grouped by category."
+  },
+  "education": {
+    "headline": "Background",
+    "title": "Education & certifications",
+    "description": "Studies, courses and relevant certifications."
+  },
+  "availability": {
+    "headline": "Availability",
+    "title": "What I'm looking for",
+    "description": "The type of internship that interests me and my availability.",
+    "value": "Available for internships · Remote or hybrid"
+  },
+  "contact": {
+    "headline": "Let's talk",
+    "title": "Contact",
+    "description": "Got an internship opportunity or a question? I'll be glad to hear from you.",
+    "email": "Email me"
+  },
+  "footer": {
+    "rights": "© {year} {name} · Built with Nuxt"
+  },
+  "seo": {
+    "title": "{name} · Computer Engineering Student",
+    "description": "Computer Engineering Student | Web / Backend / Data Development. Looking for my first IT internship."
+  },
+  "common": {
+    "comingSoon": "Coming soon…"
+  },
+  "a11y": {
+    "toggleLanguage": "Change language"
+  }
+}

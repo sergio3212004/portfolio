@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "projects": "Proyectos",
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy {name}",
+    "headline": "Estudiante de Ingeniería Informática | Desarrollo Web / Backend / Datos",
+    "valueProp": "Busco mi primera práctica en TI para aportar en desarrollo de software y seguir aprendiendo.",
+    "viewProjects": "Ver proyectos",
+    "downloadCv": "Descargar CV"
+  },
+  "projects": {
+    "headline": "Trabajo",
+    "title": "Proyectos destacados",
+    "description": "Los mejores primero: captura, stack, mi rol y un detalle técnico en cada tarjeta."
+  },
+  "about": {
+    "headline": "Perfil",
+    "title": "Sobre mí",
+    "description": "Quién soy, qué estudio y qué busco."
+  },
+  "skills": {
+    "headline": "Stack",
+    "title": "Habilidades técnicas",
+    "description": "Solo lo que puedo defender en una entrevista, agrupado por categoría."
+  },
+  "education": {
+    "headline": "Trayectoria",
+    "title": "Formación y certificaciones",
+    "description": "Estudios, cursos y certificaciones relevantes."
+  },
+  "availability": {
+    "headline": "Disponibilidad",
+    "title": "Qué busco",
+    "description": "El tipo de práctica que me interesa y mi disponibilidad.",
+    "value": "Disponible para prácticas · Remoto o híbrido"
+  },
+  "contact": {
+    "headline": "Hablemos",
+    "title": "Contacto",
+    "description": "¿Tienes una oportunidad de prácticas o una consulta? Te leo.",
+    "email": "Escríbeme"
+  },
+  "footer": {
+    "rights": "© {year} {name} · Hecho con Nuxt"
+  },
+  "seo": {
+    "title": "{name} · Estudiante de Ingeniería Informática",
+    "description": "Estudiante de Ingeniería Informática | Desarrollo Web / Backend / Datos. Busco mi primera práctica en TI."
+  },
+  "common": {
+    "comingSoon": "En construcción…"
+  },
+  "a11y": {
+    "toggleLanguage": "Cambiar idioma"
+  }
+}
