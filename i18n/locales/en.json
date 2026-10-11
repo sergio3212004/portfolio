@@ -6,11 +6,20 @@
     "contact": "Contact"
   },
   "hero": {
+    "rolePrefix": "FULL STACK /",
+    "roleSuffix": "DEVELOPER",
     "greeting": "Hi, I'm {name}",
     "headline": "Computer Engineering Student | Web / Backend / Data Development",
-    "valueProp": "I'm looking for my first IT internship to contribute to software development and keep growing.",
+    "valueProp": "Computer Engineering student passionate about software development, backend systems and data. Ready to build scalable and high-performance solutions.",
+    "cta": "LET'S TALK",
+    "status": "Available for internships & opportunities",
     "viewProjects": "View projects",
-    "downloadCv": "Download CV"
+    "downloadCv": "Download CV",
+    "stats": {
+      "projects": "Projects Completed",
+      "focus": "Backend, Web & Data",
+      "techs": "Techs & Tools Mastered"
+    }
   },
   "projects": {
     "headline": "Work",

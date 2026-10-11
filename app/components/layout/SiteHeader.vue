@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { site, socials } from "~/data/site";
+import { site } from "~/data/site";
 
 const items = useNavItems();
 </script>
@@ -19,18 +19,6 @@ const items = useNavItems();
     <template #right>
       <LocaleSwitcher />
       <UColorModeButton />
-
-      <UButton
-        v-for="social in socials"
-        :key="social.label"
-        :to="social.to"
-        target="_blank"
-        rel="noopener noreferrer"
-        color="neutral"
-        variant="ghost"
-        :icon="social.icon"
-        :aria-label="social.label"
-      />
     </template>
 
     <template #body>

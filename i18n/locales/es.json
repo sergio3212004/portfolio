@@ -6,11 +6,20 @@
     "contact": "Contacto"
   },
   "hero": {
+    "rolePrefix": "FULL STACK /",
+    "roleSuffix": "DEVELOPER",
     "greeting": "Hola, soy {name}",
     "headline": "Estudiante de Ingeniería Informática | Desarrollo Web / Backend / Datos",
-    "valueProp": "Busco mi primera práctica en TI para aportar en desarrollo de software y seguir aprendiendo.",
+    "valueProp": "Estudiante de Ingeniería Informática apasionado por el desarrollo de software, backend y datos. Preparado para construir soluciones escalables y con alto impacto.",
+    "cta": "HABLEMOS",
+    "status": "Disponible para prácticas y proyectos",
     "viewProjects": "Ver proyectos",
-    "downloadCv": "Descargar CV"
+    "downloadCv": "Descargar CV",
+    "stats": {
+      "projects": "Proyectos desarrollados",
+      "focus": "Backend, Web & Datos",
+      "techs": "Tecnologías y herramientas"
+    }
   },
   "projects": {
     "headline": "Trabajo",
