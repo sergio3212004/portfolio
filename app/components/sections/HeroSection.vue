@@ -13,7 +13,7 @@ const { t } = useI18n()
     <SpacetimeGravityCanvas :grid-size="32" :gravity-radius="260" :gravity-strength="52" />
 
     <!-- Contenedor Principal del Hero -->
-    <div class="relative z-10 mx-auto w-full max-w-7xl">
+    <div class="relative z-10 mx-auto w-full max-w-(--ui-container)">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
         <!-- Columna Izquierda / Central: Titular masivo y presentación -->
         <div class="lg:col-span-8 flex flex-col items-start text-left">

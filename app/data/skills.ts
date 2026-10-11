@@ -168,4 +168,46 @@ export const skillCategories: SkillCategory[] = [
       },
     ],
   },
+  {
+    id: 'devops',
+    titleKey: 'skills.categories.devops',
+    icon: 'catppuccin:folder-docker',
+    skills: [
+      {
+        name: 'Git',
+        icon: 'i-simple-icons-git',
+        colorClass: 'text-[var(--ctp-latte-red)] dark:text-[var(--ctp-mocha-red)]',
+        hoverBgClass: 'hover:bg-[var(--ctp-latte-red)]/10 dark:hover:bg-[var(--ctp-mocha-red)]/15',
+        hoverBorderClass: 'hover:border-[var(--ctp-latte-red)]/40 dark:hover:border-[var(--ctp-mocha-red)]/50',
+      },
+      {
+        name: 'GitHub',
+        icon: 'i-simple-icons-github',
+        colorClass: 'text-[var(--ctp-latte-text)] dark:text-[var(--ctp-mocha-text)]',
+        hoverBgClass: 'hover:bg-[var(--ctp-latte-text)]/10 dark:hover:bg-[var(--ctp-mocha-text)]/15',
+        hoverBorderClass: 'hover:border-[var(--ctp-latte-text)]/40 dark:hover:border-[var(--ctp-mocha-text)]/50',
+      },
+      {
+        name: 'Postman',
+        icon: 'i-simple-icons-postman',
+        colorClass: 'text-[var(--ctp-latte-peach)] dark:text-[var(--ctp-mocha-peach)]',
+        hoverBgClass: 'hover:bg-[var(--ctp-latte-peach)]/10 dark:hover:bg-[var(--ctp-mocha-peach)]/15',
+        hoverBorderClass: 'hover:border-[var(--ctp-latte-peach)]/40 dark:hover:border-[var(--ctp-mocha-peach)]/50',
+      },
+      {
+        name: 'Docker',
+        icon: 'i-simple-icons-docker',
+        colorClass: 'text-[var(--ctp-latte-blue)] dark:text-[var(--ctp-mocha-blue)]',
+        hoverBgClass: 'hover:bg-[var(--ctp-latte-blue)]/10 dark:hover:bg-[var(--ctp-mocha-blue)]/15',
+        hoverBorderClass: 'hover:border-[var(--ctp-latte-blue)]/40 dark:hover:border-[var(--ctp-mocha-blue)]/50',
+      },
+      {
+        name: 'Linux',
+        icon: 'i-simple-icons-linux',
+        colorClass: 'text-[var(--ctp-latte-yellow)] dark:text-[var(--ctp-mocha-yellow)]',
+        hoverBgClass: 'hover:bg-[var(--ctp-latte-yellow)]/10 dark:hover:bg-[var(--ctp-mocha-yellow)]/15',
+        hoverBorderClass: 'hover:border-[var(--ctp-latte-yellow)]/40 dark:hover:border-[var(--ctp-mocha-yellow)]/50',
+      },
+    ],
+  },
 ]

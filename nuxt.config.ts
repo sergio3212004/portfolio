@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   modules: ["@nuxt/ui", "@nuxt/fonts", "@nuxtjs/i18n"],
   // Nombres de componente limpios aunque estén en subcarpetas:
   // components/layout/SiteHeader.vue -> <SiteHeader />

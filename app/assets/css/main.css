@@ -23,6 +23,11 @@
    1) Paleta cruda (referencia reutilizable)
    -------------------------------------------------------------------------- */
 :root {
+  /* Ancho del contenedor global del sitio (header, secciones y footer).
+     Se ensancha a 90rem (1440px) para que las 4 tarjetas de skills quepan
+     en una sola fila en pantallas de escritorio. */
+  --ui-container: 90rem;
+
   /* Catppuccin Latte (light) */
   --ctp-latte-rosewater: #dc8a78;
   --ctp-latte-flamingo: #dd7878;
