@@ -7,7 +7,8 @@ const year = new Date().getFullYear()
 </script>
 
 <template>
-  <UFooter>
+  <!-- En móvil reservamos espacio inferior para el dock flotante de redes -->
+  <UFooter class="max-xl:pb-20">
     <template #left>
       <p class="text-sm text-muted">
         {{ t('footer.rights', { year, name: site.name }) }}
