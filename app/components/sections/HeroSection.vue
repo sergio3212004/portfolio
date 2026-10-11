@@ -12,9 +12,6 @@ const { t } = useI18n()
     <!-- Malla interactiva de curvatura gravitatoria espacio-tiempo -->
     <SpacetimeGravityCanvas :grid-size="32" :gravity-radius="260" :gravity-strength="52" />
 
-    <!-- Barra lateral con iconos sociales (Gmail, GitHub, WhatsApp, LinkedIn) -->
-    <FloatingSocialSidebar />
-
     <!-- Contenedor Principal del Hero -->
     <div class="relative z-10 mx-auto w-full max-w-7xl">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">

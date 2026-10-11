@@ -23,6 +23,9 @@ useSeoMeta({
       <ContactSection />
     </UMain>
 
+    <!-- Barra lateral flotante de redes sociales visible a lo largo de toda la página -->
+    <FloatingSocialSidebar />
+
     <SiteFooter />
   </UApp>
 </template>

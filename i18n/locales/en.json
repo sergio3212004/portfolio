@@ -34,7 +34,12 @@
   "skills": {
     "headline": "Stack",
     "title": "Technical skills",
-    "description": "Only what I can defend in an interview, grouped by category."
+    "description": "Only what I can defend in an interview, grouped by category.",
+    "categories": {
+      "languages": "Languages",
+      "backend": "Backend",
+      "frontend": "Frontend"
+    }
   },
   "education": {
     "headline": "Background",

@@ -25,9 +25,16 @@ const year = new Date().getFullYear()
         rel="noopener noreferrer"
         color="neutral"
         variant="ghost"
-        :icon="social.icon"
         :aria-label="social.label"
-      />
+        class="transition-all duration-200 hover:scale-110"
+        :class="[social.hoverBgClass]"
+      >
+        <UIcon
+          :name="social.icon"
+          class="w-4 h-4 shrink-0"
+          :class="social.colorClass"
+        />
+      </UButton>
     </template>
   </UFooter>
 </template>

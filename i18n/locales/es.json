@@ -34,7 +34,12 @@
   "skills": {
     "headline": "Stack",
     "title": "Habilidades técnicas",
-    "description": "Solo lo que puedo defender en una entrevista, agrupado por categoría."
+    "description": "Solo lo que puedo defender en una entrevista, agrupado por categoría.",
+    "categories": {
+      "languages": "Lenguajes",
+      "backend": "Backend",
+      "frontend": "Frontend"
+    }
   },
   "education": {
     "headline": "Trayectoria",
