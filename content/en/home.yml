@@ -23,6 +23,14 @@ quotes:
     author: Sir Antony Hoare
     source: Sir Antony Hoare, 1980
     sourceUrl: https://www.cs.utexas.edu/~EWD/transcriptions/EWD13xx/EWD1304.html
+  - text: "The most dangerous phrase in the language is, 'We’ve always done it this way.'"
+    author: Grace Hopper
+    source: Computerworld, 1976
+    sourceUrl: https://en.wikiquote.org/wiki/Grace_Hopper
+  - text: "The best way to predict the future is to invent it."
+    author: Alan Kay
+    source: Xerox PARC, 1971
+    sourceUrl: https://en.wikiquote.org/wiki/Alan_Kay
 faqTitle: Frequently asked questions
 faqIntro: A little more about where I am and what I’m working toward.
 faqs:

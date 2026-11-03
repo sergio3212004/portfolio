@@ -23,6 +23,14 @@ quotes:
     author: Sir Antony Hoare
     source: Sir Antony Hoare, 1980
     sourceUrl: https://www.cs.utexas.edu/~EWD/transcriptions/EWD13xx/EWD1304.html
+  - text: "La frase más peligrosa del lenguaje es: 'Siempre lo hemos hecho así'."
+    author: Grace Hopper
+    source: Computerworld, 1976
+    sourceUrl: https://en.wikiquote.org/wiki/Grace_Hopper
+  - text: "La mejor manera de predecir el futuro es inventarlo."
+    author: Alan Kay
+    source: Xerox PARC, 1971
+    sourceUrl: https://en.wikiquote.org/wiki/Alan_Kay
 faqTitle: Preguntas frecuentes
 faqIntro: Un poco más sobre mi momento actual y lo que quiero conseguir.
 faqs:
