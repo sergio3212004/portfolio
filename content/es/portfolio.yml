@@ -3,6 +3,41 @@ heroTitle: Me apasiona la tecnología y todo lo que puedo crear con ella.
 heroSubtitle: Soy estudiante de Ciencias de la Computación y desarrollo proyectos mientras aprendo.
 heroDescription: Este es mi espacio para compartir en qué estoy trabajando, qué estoy aprendiendo y qué ideas despiertan mi curiosidad. Estoy al comienzo de mi camino y creo que la mejor forma de crecer es seguir construyendo, haciendo preguntas y compartiendo el proceso.
 heroCta: Explora mis proyectos
+careerTitle: Estudio Ciencias de la Computación
+careerDescription: >-
+  Mi carrera es el lugar donde estoy construyendo las bases para entender el software, no solo para utilizarlo. Estoy aprendiendo a conectar la programación y la resolución de problemas con una perspectiva más amplia: cómo la tecnología puede convertirse en algo útil para las personas.
+careerDetail: >-
+  Todavía estoy explorando en qué área quiero especializarme. Por ahora, me centro en fortalecer mis fundamentos, convertir lo que aprendo en proyectos y mantenerme abierto a los distintos caminos dentro de la informática.
+quotesTitle: Ideas que me inspiran
+quotesIntro: Algunas ideas de informáticos que conectan con la forma en que quiero aprender y crear.
+quotes:
+  - text: "Solo podemos ver un poco hacia adelante, pero podemos ver que hay mucho por hacer."
+    author: Alan Turing
+    source: Computing Machinery and Intelligence, 1950
+    sourceUrl: https://doi.org/10.1093/mind/LIX.236.433
+  - text: "En lugar de imaginar que nuestra tarea principal es indicar a una computadora qué hacer, concentrémonos más bien en explicar a los seres humanos qué queremos que haga una computadora."
+    author: Donald Knuth
+    source: Literate Programming, 1984
+    sourceUrl: https://www.cs.tufts.edu/~nr/cs257/archive/literate-programming/01-knuth-lp.pdf
+  - text: "El precio de la fiabilidad es la búsqueda de la máxima sencillez."
+    author: Sir Antony Hoare
+    source: Sir Antony Hoare, 1980
+    sourceUrl: https://www.cs.utexas.edu/~EWD/transcriptions/EWD13xx/EWD1304.html
+faqTitle: Preguntas frecuentes
+faqIntro: Un poco más sobre mi momento actual y lo que quiero conseguir.
+faqs:
+  - question: ¿Qué estás estudiando?
+    answer: >-
+      Estudio Ciencias de la Computación. Estoy desarrollando mis conocimientos de programación y resolución de problemas mientras exploro cómo aplicar esos fundamentos a la creación de software y experiencias web.
+  - question: ¿Tienes experiencia profesional?
+    answer: >-
+      Todavía no. Actualmente soy estudiante y mi portfolio se centra en proyectos personales y aprendizaje. Veo cada proyecto como una oportunidad para practicar, reflexionar y mejorar.
+  - question: ¿Qué tecnologías estás aprendiendo?
+    answer: >-
+      Este portfolio forma parte de mi aprendizaje con Nuxt, Vue, TypeScript, Nuxt UI y Nuxt Content. Sigo explorando nuevas herramientas y ampliaré esta lista a medida que adquiera experiencia práctica.
+  - question: ¿Puedo contactarte sobre un proyecto o una idea?
+    answer: >-
+      Sí. Siempre estoy abierto a conversaciones interesantes sobre tecnología, aprendizaje y proyectos. Visita mi página de Contacto para ver los canales que he decidido compartir.
 visionTitle: Mi visión
 vision: Quiero contribuir a crear tecnología útil, reflexiva y accesible. Me interesa entender a las personas y los problemas detrás de un producto, no solo el código, y crear experiencias digitales que puedan mejorar un poco las cosas cotidianas.
 skillsTitle: Habilidades que estoy desarrollando

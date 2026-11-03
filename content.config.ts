@@ -6,6 +6,23 @@ const portfolioSchema = z.object({
   heroSubtitle: z.string(),
   heroDescription: z.string(),
   heroCta: z.string(),
+  careerTitle: z.string(),
+  careerDescription: z.string(),
+  careerDetail: z.string(),
+  quotesTitle: z.string(),
+  quotesIntro: z.string(),
+  quotes: z.array(z.object({
+    text: z.string(),
+    author: z.string(),
+    source: z.string(),
+    sourceUrl: z.string().url().optional()
+  })),
+  faqTitle: z.string(),
+  faqIntro: z.string(),
+  faqs: z.array(z.object({
+    question: z.string(),
+    answer: z.string()
+  })),
   visionTitle: z.string(),
   vision: z.string(),
   skillsTitle: z.string(),

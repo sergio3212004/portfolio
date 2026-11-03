@@ -3,6 +3,41 @@ heroTitle: Curious about technology. Focused on what I can create with it.
 heroSubtitle: I'm a Computer Science student building projects as I learn.
 heroDescription: This is my space to share what I'm working on, what I'm learning, and the ideas that make me curious. I'm at the beginning of my journey, and I believe the best way to grow is to keep building, asking questions, and sharing the process.
 heroCta: Explore my projects
+careerTitle: Studying Computer Science
+careerDescription: >-
+  My degree is where I’m building the foundations to understand software, not just use it. I’m learning to connect programming and problem-solving with the bigger picture: how technology can become something useful for people.
+careerDetail: >-
+  I’m still exploring which area I want to specialize in. For now, I’m focused on strengthening my fundamentals, turning what I learn into projects, and staying open to the different paths within computer science.
+quotesTitle: Ideas that inspire me
+quotesIntro: A few thoughts from computer scientists that connect with how I want to learn and build.
+quotes:
+  - text: "We can only see a short distance ahead, but we can see plenty there that needs to be done."
+    author: Alan Turing
+    source: Computing Machinery and Intelligence, 1950
+    sourceUrl: https://doi.org/10.1093/mind/LIX.236.433
+  - text: "Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do."
+    author: Donald Knuth
+    source: Literate Programming, 1984
+    sourceUrl: https://www.cs.tufts.edu/~nr/cs257/archive/literate-programming/01-knuth-lp.pdf
+  - text: "The price of reliability is the pursuit of the utmost simplicity."
+    author: Sir Antony Hoare
+    source: Sir Antony Hoare, 1980
+    sourceUrl: https://www.cs.utexas.edu/~EWD/transcriptions/EWD13xx/EWD1304.html
+faqTitle: Frequently asked questions
+faqIntro: A little more about where I am and what I’m working toward.
+faqs:
+  - question: What are you studying?
+    answer: >-
+      I’m studying Computer Science. I’m developing my understanding of programming and problem-solving while exploring how those foundations apply to building software and web experiences.
+  - question: Do you have professional experience?
+    answer: >-
+      Not yet. I’m currently a student, and my portfolio is focused on personal projects and learning. I see each project as an opportunity to practice, reflect, and improve.
+  - question: What technologies are you learning?
+    answer: >-
+      This portfolio is part of my learning with Nuxt, Vue, TypeScript, Nuxt UI, and Nuxt Content. I’m still exploring new tools and expanding this list as I gain hands-on experience.
+  - question: Can I contact you about a project or idea?
+    answer: >-
+      Yes. I’m always open to thoughtful conversations about technology, learning, and projects. Visit my Contact page for the channels I’ve chosen to share.
 visionTitle: My vision
 vision: I want to help create technology that feels useful, thoughtful, and accessible. I’m interested in understanding the people and problems behind a product—not just the code—and in making digital experiences that make everyday things a little better.
 skillsTitle: Skills I'm developing
