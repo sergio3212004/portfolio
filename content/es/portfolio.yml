@@ -1,0 +1,37 @@
+currentStatus: Estudiante de Ciencias de la Computación · aprendiendo al construir
+heroTitle: Me apasiona la tecnología y todo lo que puedo crear con ella.
+heroSubtitle: Soy estudiante de Ciencias de la Computación y desarrollo proyectos mientras aprendo.
+heroDescription: Este es mi espacio para compartir en qué estoy trabajando, qué estoy aprendiendo y qué ideas despiertan mi curiosidad. Estoy al comienzo de mi camino y creo que la mejor forma de crecer es seguir construyendo, haciendo preguntas y compartiendo el proceso.
+heroCta: Explora mis proyectos
+visionTitle: Mi visión
+vision: Quiero contribuir a crear tecnología útil, reflexiva y accesible. Me interesa entender a las personas y los problemas detrás de un producto, no solo el código, y crear experiencias digitales que puedan mejorar un poco las cosas cotidianas.
+skillsTitle: Habilidades que estoy desarrollando
+skillsIntro: Todavía estoy aprendiendo, así que veo estas áreas como temas que estoy explorando activamente, no como una lista cerrada.
+skillGroups:
+  - title: Fundamentos de informática
+    items:
+      - Fundamentos de programación
+      - Resolución de problemas
+      - Descomponer problemas complejos
+  - title: Desarrollo web
+    items:
+      - Crear para la web
+      - Desarrollo frontend
+      - Aprender mediante proyectos personales
+  - title: Mi forma de trabajar
+    items:
+      - Curiosidad y experimentación
+      - Aprender de los comentarios
+      - Documentar lo que descubro
+projectsTitle: Proyectos
+projectsIntro: Los proyectos pequeños y en evolución son parte de mi aprendizaje. Esto es lo que estoy construyendo ahora.
+journeyTitle: Mi camino de aprendizaje
+journey: Todavía no tengo experiencia profesional; soy estudiante y voy construyendo mis fundamentos proyecto a proyecto. Quiero que este portfolio muestre el proceso con honestidad: qué probé, qué aprendí y qué mejoraría después. A medida que avance, iré añadiendo proyectos y aprendizajes.
+interestsTitle: Temas que me interesan
+interests:
+  - Tecnología centrada en las personas
+  - Experiencias digitales bien pensadas
+  - Cómo las ideas se convierten en productos útiles
+  - Explorar nuevas herramientas y enfoques
+contactTitle: Hablemos
+contactIntro: Si algo de aquí te dio una idea, o quieres conversar sobre tecnología, aprendizaje o algún proyecto, me encantará saber de ti. Añade abajo los enlaces de contacto que quieras compartir.

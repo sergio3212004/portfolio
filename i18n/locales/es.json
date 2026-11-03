@@ -1,0 +1,32 @@
+{
+  "site": {
+    "title": "Portfolio"
+  },
+  "nav": {
+    "home": "Inicio",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "aboutMe": "Sobre mí",
+    "contact": "Contacto"
+  },
+  "language": {
+    "select": "Seleccionar idioma"
+  },
+  "home": {
+    "projectsCta": "Explora mis proyectos",
+    "aboutCta": "Un poco sobre mí"
+  },
+  "projects": {
+    "intro": "Los proyectos pequeños y en evolución son parte de mi aprendizaje. Esto es lo que estoy construyendo ahora.",
+    "empty": "Estoy preparando proyectos para compartir aquí.",
+    "source": "Ver código",
+    "demo": "Ver demo"
+  },
+  "contact": {
+    "intro": "Si algo de aquí te dio una idea, o quieres conversar sobre tecnología, aprendizaje o algún proyecto, me encantará saber de ti.",
+    "email": "Envíame un correo"
+  },
+  "footer": {
+    "copyright": "© {year} Portfolio. Todos los derechos reservados."
+  }
+}

@@ -1,0 +1,23 @@
+<template>
+  <div v-if="profile" class="py-8">
+    <PageIntro :eyebrow="t('nav.projects')" :title="profile.projectsTitle" :description="profile.projectsIntro" />
+
+    <div v-if="projects?.length" class="grid gap-5 md:grid-cols-2">
+      <ProjectCard v-for="project in projects" :key="project.title" :project="project" />
+    </div>
+    <UCard v-else variant="soft" :ui="{ root: 'divide-y-0', body: 'p-6 sm:p-8' }">
+      <p class="text-lg leading-8 text-toned">{{ t('projects.empty') }}</p>
+    </UCard>
+  </div>
+</template>
+
+<script setup lang="ts">
+const { t } = useI18n()
+const { data: profile } = await usePortfolioProfile()
+const { data: projects } = await usePortfolioProjects()
+
+useSeoMeta({
+  title: () => `${t('nav.projects')} · ${t('site.title')}`,
+  description: () => profile.value?.projectsIntro ?? ''
+})
+</script>

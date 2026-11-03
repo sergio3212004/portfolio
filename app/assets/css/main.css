@@ -1,0 +1,179 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --color-iris-50: color-mix(in oklab, #c4a7e7 12%, #fffaf3);
+  --color-iris-100: color-mix(in oklab, #c4a7e7 25%, #fffaf3);
+  --color-iris-200: color-mix(in oklab, #c4a7e7 45%, #fffaf3);
+  --color-iris-300: color-mix(in oklab, #c4a7e7 70%, #fffaf3);
+  --color-iris-400: #c4a7e7;
+  --color-iris-500: #907aa9;
+  --color-iris-600: color-mix(in oklab, #907aa9 80%, #191724);
+  --color-iris-700: color-mix(in oklab, #907aa9 60%, #191724);
+  --color-iris-800: color-mix(in oklab, #907aa9 40%, #191724);
+  --color-iris-900: color-mix(in oklab, #907aa9 25%, #191724);
+  --color-iris-950: color-mix(in oklab, #907aa9 12%, #191724);
+
+  --color-rose-50: color-mix(in oklab, #ebbcba 12%, #fffaf3);
+  --color-rose-100: color-mix(in oklab, #ebbcba 25%, #fffaf3);
+  --color-rose-200: color-mix(in oklab, #ebbcba 45%, #fffaf3);
+  --color-rose-300: color-mix(in oklab, #ebbcba 70%, #fffaf3);
+  --color-rose-400: #ebbcba;
+  --color-rose-500: #d7827e;
+  --color-rose-600: color-mix(in oklab, #d7827e 80%, #191724);
+  --color-rose-700: color-mix(in oklab, #d7827e 60%, #191724);
+  --color-rose-800: color-mix(in oklab, #d7827e 40%, #191724);
+  --color-rose-900: color-mix(in oklab, #d7827e 25%, #191724);
+  --color-rose-950: color-mix(in oklab, #d7827e 12%, #191724);
+
+  --color-pine-50: color-mix(in oklab, #31748f 12%, #fffaf3);
+  --color-pine-100: color-mix(in oklab, #31748f 25%, #fffaf3);
+  --color-pine-200: color-mix(in oklab, #31748f 45%, #fffaf3);
+  --color-pine-300: color-mix(in oklab, #31748f 70%, #fffaf3);
+  --color-pine-400: #31748f;
+  --color-pine-500: #286983;
+  --color-pine-600: color-mix(in oklab, #286983 80%, #191724);
+  --color-pine-700: color-mix(in oklab, #286983 60%, #191724);
+  --color-pine-800: color-mix(in oklab, #286983 40%, #191724);
+  --color-pine-900: color-mix(in oklab, #286983 25%, #191724);
+  --color-pine-950: color-mix(in oklab, #286983 12%, #191724);
+
+  --color-foam-50: color-mix(in oklab, #9ccfd8 12%, #fffaf3);
+  --color-foam-100: color-mix(in oklab, #9ccfd8 25%, #fffaf3);
+  --color-foam-200: color-mix(in oklab, #9ccfd8 45%, #fffaf3);
+  --color-foam-300: color-mix(in oklab, #9ccfd8 70%, #fffaf3);
+  --color-foam-400: #9ccfd8;
+  --color-foam-500: #56949f;
+  --color-foam-600: color-mix(in oklab, #56949f 80%, #191724);
+  --color-foam-700: color-mix(in oklab, #56949f 60%, #191724);
+  --color-foam-800: color-mix(in oklab, #56949f 40%, #191724);
+  --color-foam-900: color-mix(in oklab, #56949f 25%, #191724);
+  --color-foam-950: color-mix(in oklab, #56949f 12%, #191724);
+
+  --color-gold-50: color-mix(in oklab, #f6c177 12%, #fffaf3);
+  --color-gold-100: color-mix(in oklab, #f6c177 25%, #fffaf3);
+  --color-gold-200: color-mix(in oklab, #f6c177 45%, #fffaf3);
+  --color-gold-300: color-mix(in oklab, #f6c177 70%, #fffaf3);
+  --color-gold-400: #f6c177;
+  --color-gold-500: #ea9d34;
+  --color-gold-600: color-mix(in oklab, #ea9d34 80%, #191724);
+  --color-gold-700: color-mix(in oklab, #ea9d34 60%, #191724);
+  --color-gold-800: color-mix(in oklab, #ea9d34 40%, #191724);
+  --color-gold-900: color-mix(in oklab, #ea9d34 25%, #191724);
+  --color-gold-950: color-mix(in oklab, #ea9d34 12%, #191724);
+
+  --color-love-50: color-mix(in oklab, #eb6f92 12%, #fffaf3);
+  --color-love-100: color-mix(in oklab, #eb6f92 25%, #fffaf3);
+  --color-love-200: color-mix(in oklab, #eb6f92 45%, #fffaf3);
+  --color-love-300: color-mix(in oklab, #eb6f92 70%, #fffaf3);
+  --color-love-400: #eb6f92;
+  --color-love-500: #b4637a;
+  --color-love-600: color-mix(in oklab, #b4637a 80%, #191724);
+  --color-love-700: color-mix(in oklab, #b4637a 60%, #191724);
+  --color-love-800: color-mix(in oklab, #b4637a 40%, #191724);
+  --color-love-900: color-mix(in oklab, #b4637a 25%, #191724);
+  --color-love-950: color-mix(in oklab, #b4637a 12%, #191724);
+
+  --color-rp-50: #fffaf3;
+  --color-rp-100: #faf4ed;
+  --color-rp-200: #f2e9e1;
+  --color-rp-300: #dfdad9;
+  --color-rp-400: #cecacd;
+  --color-rp-500: #9893a5;
+  --color-rp-600: #797593;
+  --color-rp-700: #464261;
+  --color-rp-800: #26233a;
+  --color-rp-900: #191724;
+  --color-rp-950: color-mix(in oklab, #191724 60%, #000);
+}
+
+.dark {
+  --color-rp-50: #e0def4;
+  --color-rp-100: #908caa;
+  --color-rp-200: #6e6a86;
+  --color-rp-300: #524f67;
+  --color-rp-400: #403d52;
+  --color-rp-500: #26233a;
+  --color-rp-600: #21202e;
+  --color-rp-700: #1f1d2e;
+  --color-rp-800: #191724;
+  --color-rp-900: #191724;
+  --color-rp-950: #191724;
+}
+
+:root,
+.light {
+  --ui-radius: 0rem;
+  --ui-header-height: 5rem;
+
+  --color-base: #faf4ed;
+  --color-surface: #fffaf3;
+  --color-overlay: #f2e9e1;
+  --color-muted: #9893a5;
+  --color-subtle: #797593;
+  --color-text: #464261;
+  --color-love: #b4637a;
+  --color-gold: #ea9d34;
+  --color-rose: #d7827e;
+  --color-pine: #286983;
+  --color-foam: #56949f;
+  --color-iris: #907aa9;
+  --color-highlight-low: #f4ede8;
+  --color-highlight-med: #dfdad9;
+  --color-highlight-high: #cecacd;
+
+  --ui-bg: var(--color-base);
+  --ui-bg-muted: var(--color-surface);
+  --ui-bg-elevated: var(--color-overlay);
+  --ui-bg-accented: var(--color-highlight-med);
+  --ui-bg-inverted: var(--color-text);
+  --ui-border: var(--color-highlight-med);
+  --ui-border-muted: var(--color-highlight-low);
+  --ui-border-accented: var(--color-highlight-high);
+  --ui-border-inverted: var(--color-text);
+  --ui-text-dimmed: var(--color-muted);
+  --ui-text-muted: var(--color-subtle);
+  --ui-text-toned: var(--color-subtle);
+  --ui-text: var(--color-text);
+  --ui-text-highlighted: var(--color-text);
+  --ui-text-inverted: var(--color-base);
+}
+
+.dark {
+  --color-base: #191724;
+  --color-surface: #1f1d2e;
+  --color-overlay: #26233a;
+  --color-muted: #6e6a86;
+  --color-subtle: #908caa;
+  --color-text: #e0def4;
+  --color-love: #eb6f92;
+  --color-gold: #f6c177;
+  --color-rose: #ebbcba;
+  --color-pine: #31748f;
+  --color-foam: #9ccfd8;
+  --color-iris: #c4a7e7;
+  --color-highlight-low: #21202e;
+  --color-highlight-med: #403d52;
+  --color-highlight-high: #524f67;
+
+  --ui-bg: var(--color-base);
+  --ui-bg-muted: var(--color-surface);
+  --ui-bg-elevated: var(--color-overlay);
+  --ui-bg-accented: var(--color-highlight-med);
+  --ui-bg-inverted: var(--color-text);
+  --ui-border: var(--color-highlight-med);
+  --ui-border-muted: var(--color-highlight-low);
+  --ui-border-accented: var(--color-highlight-high);
+  --ui-border-inverted: var(--color-text);
+  --ui-text-dimmed: var(--color-muted);
+  --ui-text-muted: var(--color-subtle);
+  --ui-text-toned: var(--color-subtle);
+  --ui-text: var(--color-text);
+  --ui-text-highlighted: var(--color-text);
+  --ui-text-inverted: var(--color-base);
+}
+
+body {
+  background-color: var(--ui-bg);
+  color: var(--ui-text);
+}

@@ -1,0 +1,10 @@
+order: 1
+title: Portfolio personal
+description: Este portfolio es un proyecto en desarrollo en el que estoy aprendiendo a crear un sitio bilingüe, organizar contenido editable y presentar mi trabajo con claridad.
+status: En desarrollo
+technologies:
+  - Nuxt
+  - Vue
+  - TypeScript
+  - Nuxt UI
+  - Nuxt Content
