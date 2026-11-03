@@ -1,0 +1,18 @@
+title: Habilidades que estoy desarrollando
+intro: Todavía estoy aprendiendo, así que veo estas áreas como temas que estoy explorando activamente, no como una lista cerrada.
+skillGroups:
+  - title: Fundamentos de informática
+    items:
+      - Fundamentos de programación
+      - Resolución de problemas
+      - Descomponer problemas complejos
+  - title: Desarrollo web
+    items:
+      - Crear para la web
+      - Desarrollo frontend
+      - Aprender mediante proyectos personales
+  - title: Mi forma de trabajar
+    items:
+      - Curiosidad y experimentación
+      - Aprender de los comentarios
+      - Documentar lo que descubro

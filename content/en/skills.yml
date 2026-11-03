@@ -1,0 +1,18 @@
+title: Skills I'm developing
+intro: I'm still learning, so I think of these as areas I'm actively exploring rather than a finished checklist.
+skillGroups:
+  - title: Computer science foundations
+    items:
+      - Programming fundamentals
+      - Problem solving
+      - Breaking down complex problems
+  - title: Web development
+    items:
+      - Building for the web
+      - Frontend development
+      - Learning through personal projects
+  - title: How I like to work
+    items:
+      - Curiosity and experimentation
+      - Learning from feedback
+      - Documenting what I discover

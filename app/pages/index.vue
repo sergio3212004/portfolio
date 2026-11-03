@@ -1,38 +1,38 @@
 <template>
-  <div v-if="profile" class="space-y-20 sm:space-y-28">
+  <div v-if="home" class="space-y-20 sm:space-y-28">
     <HeroSection
-      :current-status="profile.currentStatus"
-      :title="profile.heroTitle"
-      :subtitle="profile.heroSubtitle"
-      :description="profile.heroDescription"
+      :current-status="home.currentStatus"
+      :title="home.heroTitle"
+      :subtitle="home.heroSubtitle"
+      :description="home.heroDescription"
     />
 
     <CareerSection
-      :title="profile.careerTitle"
-      :description="profile.careerDescription"
-      :detail="profile.careerDetail"
+      :title="home.careerTitle"
+      :description="home.careerDescription"
+      :detail="home.careerDetail"
     />
 
     <QuotesSection
-      :title="profile.quotesTitle"
-      :intro="profile.quotesIntro"
-      :quotes="profile.quotes"
+      :title="home.quotesTitle"
+      :intro="home.quotesIntro"
+      :quotes="home.quotes"
     />
 
     <FaqSection
-      :title="profile.faqTitle"
-      :intro="profile.faqIntro"
-      :items="profile.faqs"
+      :title="home.faqTitle"
+      :intro="home.faqIntro"
+      :items="home.faqs"
     />
   </div>
 </template>
 
 <script setup lang="ts">
 const { t } = useI18n()
-const { data: profile } = await usePortfolioProfile()
+const { data: home } = await useHomeContent()
 
 useSeoMeta({
-  title: () => profile.value?.heroTitle ?? t('nav.home'),
-  description: () => profile.value?.heroDescription ?? ''
+  title: () => home.value?.heroTitle ?? t('nav.home'),
+  description: () => home.value?.heroDescription ?? ''
 })
 </script>

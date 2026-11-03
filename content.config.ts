@@ -1,6 +1,6 @@
 import { defineCollection, defineContentConfig, z } from '@nuxt/content'
 
-const portfolioSchema = z.object({
+const homeSchema = z.object({
   currentStatus: z.string(),
   heroTitle: z.string(),
   heroSubtitle: z.string(),
@@ -15,33 +15,37 @@ const portfolioSchema = z.object({
     text: z.string(),
     author: z.string(),
     source: z.string(),
-    sourceUrl: z.string().url().optional()
+    sourceUrl: z.string().url().optional().or(z.literal(''))
   })),
   faqTitle: z.string(),
   faqIntro: z.string(),
   faqs: z.array(z.object({
     question: z.string(),
     answer: z.string()
-  })),
+  }))
+})
+
+const aboutMeSchema = z.object({
+  journeyTitle: z.string(),
+  journey: z.string(),
   visionTitle: z.string(),
   vision: z.string(),
-  skillsTitle: z.string(),
-  skillsIntro: z.string(),
+  interestsTitle: z.string(),
+  interests: z.array(z.string())
+})
+
+const skillsSchema = z.object({
+  title: z.string(),
+  intro: z.string(),
   skillGroups: z.array(z.object({
     title: z.string(),
     items: z.array(z.string())
-  })),
-  projectsTitle: z.string(),
-  projectsIntro: z.string(),
-  journeyTitle: z.string(),
-  journey: z.string(),
-  interestsTitle: z.string(),
-  interests: z.array(z.string()),
-  contactTitle: z.string(),
-  contactIntro: z.string(),
-  email: z.string().email().optional(),
-  github: z.string().url().optional(),
-  linkedin: z.string().url().optional()
+  }))
+})
+
+const projectsPageSchema = z.object({
+  title: z.string(),
+  intro: z.string()
 })
 
 const projectSchema = z.object({
@@ -50,21 +54,59 @@ const projectSchema = z.object({
   description: z.string(),
   status: z.string(),
   technologies: z.array(z.string()),
-  repository: z.string().url().optional(),
-  demo: z.string().url().optional()
+  repository: z.string().url().optional().or(z.literal('')),
+  demo: z.string().url().optional().or(z.literal(''))
+})
+
+const contactSchema = z.object({
+  title: z.string(),
+  intro: z.string(),
+  email: z.string().email().optional().or(z.literal('')),
+  github: z.string().url().optional().or(z.literal('')),
+  linkedin: z.string().url().optional().or(z.literal(''))
 })
 
 export default defineContentConfig({
   collections: {
-    portfolioEn: defineCollection({
+    homeEn: defineCollection({
       type: 'data',
-      source: 'en/portfolio.yml',
-      schema: portfolioSchema
+      source: 'en/home.yml',
+      schema: homeSchema
     }),
-    portfolioEs: defineCollection({
+    homeEs: defineCollection({
       type: 'data',
-      source: 'es/portfolio.yml',
-      schema: portfolioSchema
+      source: 'es/home.yml',
+      schema: homeSchema
+    }),
+    aboutMeEn: defineCollection({
+      type: 'data',
+      source: 'en/about-me.yml',
+      schema: aboutMeSchema
+    }),
+    aboutMeEs: defineCollection({
+      type: 'data',
+      source: 'es/about-me.yml',
+      schema: aboutMeSchema
+    }),
+    skillsEn: defineCollection({
+      type: 'data',
+      source: 'en/skills.yml',
+      schema: skillsSchema
+    }),
+    skillsEs: defineCollection({
+      type: 'data',
+      source: 'es/skills.yml',
+      schema: skillsSchema
+    }),
+    projectsPageEn: defineCollection({
+      type: 'data',
+      source: 'en/projects.yml',
+      schema: projectsPageSchema
+    }),
+    projectsPageEs: defineCollection({
+      type: 'data',
+      source: 'es/projects.yml',
+      schema: projectsPageSchema
     }),
     projectsEn: defineCollection({
       type: 'data',
@@ -75,6 +117,16 @@ export default defineContentConfig({
       type: 'data',
       source: 'es/projects/*.yml',
       schema: projectSchema
+    }),
+    contactEn: defineCollection({
+      type: 'data',
+      source: 'en/contact.yml',
+      schema: contactSchema
+    }),
+    contactEs: defineCollection({
+      type: 'data',
+      source: 'es/contact.yml',
+      schema: contactSchema
     })
   }
 })
