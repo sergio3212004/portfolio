@@ -1,6 +1,11 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
+@theme {
+  --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
 @theme static {
   --color-iris-50: color-mix(in oklab, #c4a7e7 12%, #fffaf3);
   --color-iris-100: color-mix(in oklab, #c4a7e7 25%, #fffaf3);
@@ -176,4 +181,22 @@
 body {
   background-color: var(--ui-bg);
   color: var(--ui-text);
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-sans);
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
 }

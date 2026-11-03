@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxt/ui", "@nuxtjs/i18n", "@nuxt/content"],
+  modules: ["@nuxt/ui", "@nuxt/fonts", "@nuxtjs/i18n", "@nuxt/content"],
   css: ["~/assets/css/main.css"],
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
