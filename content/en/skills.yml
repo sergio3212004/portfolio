@@ -1,18 +1,74 @@
-title: Skills I'm developing
-intro: I'm still learning, so I think of these as areas I'm actively exploring rather than a finished checklist.
-skillGroups:
-  - title: Computer science foundations
-    items:
-      - Programming fundamentals
-      - Problem solving
-      - Breaking down complex problems
-  - title: Web development
-    items:
-      - Building for the web
-      - Frontend development
-      - Learning through personal projects
-  - title: How I like to work
-    items:
-      - Curiosity and experimentation
-      - Learning from feedback
-      - Documenting what I discover
+title: Skills
+english:
+  title: English
+  icon: i-lucide-languages
+  level: B2
+  levelLabel: Upper-intermediate
+  description: I'm comfortable reading technical documentation, writing about my work, and holding conversations on familiar topics.
+intro: A snapshot of the technologies I work with, the soft skills I'm strengthening, and my current English level.
+soft:
+  title: Soft skills
+  description: How I approach learning, solving problems, and working with others.
+  icon: i-lucide-users
+  items:
+    - name: Problem solving and logical thinking
+      icon: i-lucide-brain
+    - name: Curiosity and experimentation
+      icon: i-lucide-rocket
+    - name: Learning from feedback
+      icon: i-lucide-workflow
+    - name: Breaking down complex problems
+      icon: i-lucide-puzzle
+    - name: Clear communication
+      icon: i-lucide-message-circle
+    - name: Attention to detail
+      icon: i-lucide-list-checks
+technical:
+  title: Technical skills
+  description: Technologies and tools I've used while learning and building projects.
+  icon: i-lucide-binary
+  groups:
+    - title: Languages
+      icon: i-lucide-file-type
+      items:
+        - name: TypeScript
+          icon: i-lucide-file-code
+        - name: JavaScript
+          icon: i-lucide-braces
+        - name: HTML
+          icon: i-lucide-code-xml
+        - name: CSS
+          icon: i-lucide-palette
+    - title: Frontend
+      icon: i-lucide-component
+      items:
+        - name: Vue
+          icon: i-lucide-component
+        - name: Nuxt
+          icon: i-lucide-mountain
+        - name: Nuxt UI
+          icon: i-lucide-layout-template
+        - name: Tailwind CSS
+          icon: i-lucide-wind
+    - title: Backend
+      icon: i-lucide-server
+      items:
+        - name: Node.js
+          icon: i-lucide-hexagon
+        - name: Nitro
+          icon: i-lucide-zap
+        - name: Nuxt Content
+          icon: i-lucide-file-text
+        - name: REST APIs
+          icon: i-lucide-webhook
+    - title: DevOps & tools
+      icon: i-lucide-settings-2
+      items:
+        - name: Git
+          icon: i-lucide-git-branch
+        - name: GitHub
+          icon: i-lucide-github
+        - name: Bun
+          icon: i-lucide-package
+        - name: VS Code
+          icon: i-lucide-code

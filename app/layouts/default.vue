@@ -8,6 +8,7 @@
       </UContainer>
     </main>
 
+    <AppSocialLinks />
     <AppFooter />
   </div>
 </template>

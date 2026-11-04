@@ -24,7 +24,33 @@
   },
   "contact": {
     "intro": "Si algo de aquí te dio una idea, o quieres conversar sobre tecnología, aprendizaje o algún proyecto, me encantará saber de ti.",
-    "email": "Envíame un correo"
+    "email": "Envíame un correo",
+    "directTitle": "Contacto directo",
+    "directDescription": "¿Prefieres escribirme directamente? Puedes hacerlo por cualquiera de estos canales.",
+    "form": {
+      "title": "Envíame un mensaje",
+      "description": "Completa el formulario y se abrirá tu aplicación de correo con el mensaje listo para enviar.",
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "Tu correo electrónico",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntame un poco sobre tu idea o pregunta...",
+      "submit": "Enviar mensaje",
+      "opening": "Abriendo tu aplicación de correo...",
+      "missingEmail": "El correo de contacto no está configurado.",
+      "subject": "Mensaje de {name} desde tu portfolio",
+      "errors": {
+        "name": "Por favor, escribe tu nombre.",
+        "email": "Por favor, escribe un correo electrónico válido.",
+        "message": "Por favor, escribe un mensaje.",
+        "messageLength": "Tu mensaje debe tener al menos 10 caracteres."
+      }
+    }
+  },
+  "social": {
+    "label": "Redes sociales",
+    "email": "Correo electrónico"
   },
   "footer": {
     "copyright": "© {year} Portfolio. Todos los derechos reservados."

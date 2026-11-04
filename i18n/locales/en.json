@@ -24,7 +24,33 @@
   },
   "contact": {
     "intro": "If something here sparked an idea, or you'd like to talk about technology, learning, or a project, I'd be happy to hear from you.",
-    "email": "Send me an email"
+    "email": "Send me an email",
+    "directTitle": "Direct contact",
+    "directDescription": "Prefer a direct message? Reach me through any of these channels.",
+    "form": {
+      "title": "Send a message",
+      "description": "Fill in the form and your email app will open with the message ready to send.",
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "Your email address",
+      "message": "Message",
+      "messagePlaceholder": "Tell me a little about your idea or question...",
+      "submit": "Send message",
+      "opening": "Opening your email app...",
+      "missingEmail": "The contact email is not configured.",
+      "subject": "Message from {name} via your portfolio",
+      "errors": {
+        "name": "Please enter your name.",
+        "email": "Please enter a valid email address.",
+        "message": "Please write a message.",
+        "messageLength": "Your message should be at least 10 characters."
+      }
+    }
+  },
+  "social": {
+    "label": "Social links",
+    "email": "Email"
   },
   "footer": {
     "copyright": "© {year} Portfolio. All rights reserved."

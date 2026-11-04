@@ -6,7 +6,11 @@ vision: >-
   Quiero contribuir a crear tecnología útil, reflexiva y accesible. Me interesa entender a las personas y los problemas detrás de un producto, no solo el código, y crear experiencias digitales que puedan mejorar un poco las cosas cotidianas.
 interestsTitle: Temas que me interesan
 interests:
-  - Tecnología centrada en las personas
-  - Experiencias digitales bien pensadas
-  - Cómo las ideas se convierten en productos útiles
-  - Explorar nuevas herramientas y enfoques
+  - name: Tecnología centrada en las personas
+    icon: i-lucide-users
+  - name: Experiencias digitales bien pensadas
+    icon: i-lucide-sparkles
+  - name: Cómo las ideas se convierten en productos útiles
+    icon: i-lucide-lightbulb
+  - name: Explorar nuevas herramientas y enfoques
+    icon: i-lucide-compass

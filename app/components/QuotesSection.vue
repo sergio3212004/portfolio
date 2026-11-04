@@ -1,7 +1,10 @@
 <template>
   <section aria-labelledby="quotes-heading">
     <header class="max-w-3xl">
-      <h2 id="quotes-heading" class="text-3xl font-bold tracking-tight text-highlighted sm:text-4xl">
+      <h2 id="quotes-heading" class="flex items-center gap-3 text-3xl font-bold tracking-tight text-highlighted sm:text-4xl">
+        <span class="flex size-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+          <Icon name="i-lucide-quote" class="size-6" aria-hidden="true" />
+        </span>
         {{ title }}
       </h2>
       <p class="mt-4 text-lg leading-8 text-muted">{{ intro }}</p>
@@ -31,7 +34,7 @@
           class="flex w-full flex-col h-full transition-all duration-300 hover:border-primary/50 hover:shadow-md"
           :ui="{ root: 'divide-y-0 h-full w-full flex flex-col', body: 'flex h-full flex-1 flex-col p-6 sm:p-8' }"
         >
-          <span aria-hidden="true" class="text-5xl leading-none text-primary select-none">“</span>
+          <Icon name="i-lucide-quote" class="size-9 shrink-0 text-primary" aria-hidden="true" />
           <blockquote class="mt-4 flex-1 text-lg leading-8 text-toned">
             {{ quote.text }}
           </blockquote>
@@ -42,10 +45,11 @@
               :href="quote.sourceUrl"
               target="_blank"
               rel="noopener noreferrer"
-              class="mt-1 inline-block text-sm text-primary hover:underline"
+              class="mt-1 inline-flex items-center gap-1 text-sm text-primary hover:underline"
               @click.stop
             >
               {{ quote.source }}
+              <Icon name="i-lucide-arrow-up-right" class="size-3.5 shrink-0" aria-hidden="true" />
             </a>
             <p v-else class="mt-1 text-sm text-muted">{{ quote.source }}</p>
           </figcaption>

@@ -31,16 +31,43 @@ const aboutMeSchema = z.object({
   visionTitle: z.string(),
   vision: z.string(),
   interestsTitle: z.string(),
-  interests: z.array(z.string())
+  interests: z.array(z.object({
+    name: z.string(),
+    icon: z.string()
+  }))
+})
+
+const skillItemSchema = z.object({
+  name: z.string(),
+  icon: z.string()
 })
 
 const skillsSchema = z.object({
   title: z.string(),
   intro: z.string(),
-  skillGroups: z.array(z.object({
+  technical: z.object({
     title: z.string(),
-    items: z.array(z.string())
-  }))
+    description: z.string(),
+    icon: z.string(),
+    groups: z.array(z.object({
+      title: z.string(),
+      icon: z.string(),
+      items: z.array(skillItemSchema)
+    }))
+  }),
+  soft: z.object({
+    title: z.string(),
+    description: z.string(),
+    icon: z.string(),
+    items: z.array(skillItemSchema)
+  }),
+  english: z.object({
+    title: z.string(),
+    icon: z.string(),
+    level: z.string(),
+    levelLabel: z.string(),
+    description: z.string()
+  })
 })
 
 const projectsPageSchema = z.object({

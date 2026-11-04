@@ -6,7 +6,11 @@ vision: >-
   I want to help create technology that feels useful, thoughtful, and accessible. I’m interested in understanding the people and problems behind a product—not just the code—and in making digital experiences that make everyday things a little better.
 interestsTitle: Things that interest me
 interests:
-  - Human-centered technology
-  - Thoughtful digital experiences
-  - Learning how ideas become useful products
-  - Exploring new tools and approaches
+  - name: Human-centered technology
+    icon: i-lucide-users
+  - name: Thoughtful digital experiences
+    icon: i-lucide-sparkles
+  - name: Learning how ideas become useful products
+    icon: i-lucide-lightbulb
+  - name: Exploring new tools and approaches
+    icon: i-lucide-compass

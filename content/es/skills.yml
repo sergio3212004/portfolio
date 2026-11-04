@@ -1,18 +1,74 @@
-title: Habilidades que estoy desarrollando
-intro: Todavía estoy aprendiendo, así que veo estas áreas como temas que estoy explorando activamente, no como una lista cerrada.
-skillGroups:
-  - title: Fundamentos de informática
-    items:
-      - Fundamentos de programación
-      - Resolución de problemas
-      - Descomponer problemas complejos
-  - title: Desarrollo web
-    items:
-      - Crear para la web
-      - Desarrollo frontend
-      - Aprender mediante proyectos personales
-  - title: Mi forma de trabajar
-    items:
-      - Curiosidad y experimentación
-      - Aprender de los comentarios
-      - Documentar lo que descubro
+title: Habilidades
+intro: Un resumen de las tecnologías con las que trabajo, las habilidades blandas que estoy fortaleciendo y mi nivel actual de inglés.
+technical:
+  title: Habilidades técnicas
+  description: Tecnologías y herramientas que he usado mientras aprendo y construyo proyectos.
+  icon: i-lucide-binary
+  groups:
+    - title: Lenguajes
+      icon: i-lucide-file-type
+      items:
+        - name: TypeScript
+          icon: i-lucide-file-code
+        - name: JavaScript
+          icon: i-lucide-braces
+        - name: HTML
+          icon: i-lucide-code-xml
+        - name: CSS
+          icon: i-lucide-palette
+    - title: Frontend
+      icon: i-lucide-component
+      items:
+        - name: Vue
+          icon: i-lucide-component
+        - name: Nuxt
+          icon: i-lucide-mountain
+        - name: Nuxt UI
+          icon: i-lucide-layout-template
+        - name: Tailwind CSS
+          icon: i-lucide-wind
+    - title: Backend
+      icon: i-lucide-server
+      items:
+        - name: Node.js
+          icon: i-lucide-hexagon
+        - name: Nitro
+          icon: i-lucide-zap
+        - name: Nuxt Content
+          icon: i-lucide-file-text
+        - name: APIs REST
+          icon: i-lucide-webhook
+    - title: DevOps y herramientas
+      icon: i-lucide-settings-2
+      items:
+        - name: Git
+          icon: i-lucide-git-branch
+        - name: GitHub
+          icon: i-lucide-github
+        - name: Bun
+          icon: i-lucide-package
+        - name: VS Code
+          icon: i-lucide-code
+soft:
+  title: Habilidades blandas
+  description: Cómo afronto el aprendizaje, la resolución de problemas y el trabajo con otras personas.
+  icon: i-lucide-users
+  items:
+    - name: Resolución de problemas y pensamiento lógico
+      icon: i-lucide-brain
+    - name: Curiosidad y experimentación
+      icon: i-lucide-rocket
+    - name: Aprender de la retroalimentación
+      icon: i-lucide-workflow
+    - name: Descomponer problemas complejos
+      icon: i-lucide-puzzle
+    - name: Comunicación clara
+      icon: i-lucide-message-circle
+    - name: Atención al detalle
+      icon: i-lucide-list-checks
+english:
+  title: Inglés
+  icon: i-lucide-languages
+  level: B2
+  levelLabel: Intermedio alto
+  description: Me siento cómodo leyendo documentación técnica, escribiendo sobre mi trabajo y manteniendo conversaciones sobre temas cotidianos.

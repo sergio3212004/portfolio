@@ -2,12 +2,19 @@
 export default defineNuxtConfig({
   modules: [
     "@nuxt/ui",
+    "@nuxt/icon",
     "@nuxt/fonts",
     "@nuxtjs/i18n",
     "@nuxt/content",
     "nuxt-studio",
   ],
   css: ["~/assets/css/main.css"],
+  icon: {
+    serverBundle: "local",
+    clientBundle: {
+      scan: true,
+    },
+  },
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   studio: {
