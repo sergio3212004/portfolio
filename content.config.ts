@@ -89,6 +89,7 @@ const contactSchema = z.object({
   title: z.string(),
   intro: z.string(),
   email: z.string().email().optional().or(z.literal('')),
+  phone: z.string().optional().or(z.literal('')),
   github: z.string().url().optional().or(z.literal('')),
   linkedin: z.string().url().optional().or(z.literal(''))
 })

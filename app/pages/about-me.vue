@@ -9,7 +9,7 @@
 
     <section>
       <h2 class="flex items-center gap-3 text-2xl font-semibold text-highlighted">
-        <span class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+        <span class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-secondary/10 text-secondary">
           <Icon name="i-lucide-compass" class="size-5" aria-hidden="true" />
         </span>
         {{ about.visionTitle }}
@@ -19,16 +19,17 @@
 
     <section>
       <h2 class="flex items-center gap-3 text-2xl font-semibold text-highlighted">
-        <span class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+        <span class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-warning/10 text-warning">
           <Icon name="i-lucide-heart" class="size-5" aria-hidden="true" />
         </span>
         {{ about.interestsTitle }}
       </h2>
       <div class="mt-5 flex flex-wrap gap-3">
         <UBadge
-          v-for="interest in about.interests"
+          v-for="(interest, index) in about.interests"
           :key="interest.name"
           :leading-icon="interest.icon"
+          :ui="{ leadingIcon: accents[index % accents.length] }"
           color="neutral"
           variant="soft"
           size="lg"
@@ -43,6 +44,15 @@
 <script setup lang="ts">
 const { t } = useI18n()
 const { data: about } = await useAboutContent()
+
+const accents = [
+  'text-primary',
+  'text-secondary',
+  'text-success',
+  'text-info',
+  'text-warning',
+  'text-error'
+]
 
 useSeoMeta({
   title: () => `${t('nav.aboutMe')} · ${t('site.title')}`,

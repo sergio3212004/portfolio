@@ -32,29 +32,29 @@ technical:
       icon: i-lucide-file-type
       items:
         - name: TypeScript
-          icon: i-lucide-file-code
+          icon: i-simple-icons:typescript
         - name: JavaScript
-          icon: i-lucide-braces
+          icon: i-simple-icons:javascript
         - name: HTML
-          icon: i-lucide-code-xml
+          icon: i-simple-icons:html5
         - name: CSS
-          icon: i-lucide-palette
+          icon: i-simple-icons:css3
     - title: Frontend
       icon: i-lucide-component
       items:
         - name: Vue
-          icon: i-lucide-component
+          icon: i-simple-icons:vuedotjs
         - name: Nuxt
-          icon: i-lucide-mountain
+          icon: i-simple-icons:nuxt
         - name: Nuxt UI
           icon: i-lucide-layout-template
         - name: Tailwind CSS
-          icon: i-lucide-wind
+          icon: i-simple-icons:tailwindcss
     - title: Backend
       icon: i-lucide-server
       items:
         - name: Node.js
-          icon: i-lucide-hexagon
+          icon: i-simple-icons:nodedotjs
         - name: Nitro
           icon: i-lucide-zap
         - name: Nuxt Content
@@ -65,10 +65,10 @@ technical:
       icon: i-lucide-settings-2
       items:
         - name: Git
-          icon: i-lucide-git-branch
+          icon: i-simple-icons:git
         - name: GitHub
-          icon: i-lucide-github
+          icon: i-simple-icons:github
         - name: Bun
-          icon: i-lucide-package
+          icon: i-simple-icons:bun
         - name: VS Code
-          icon: i-lucide-code
+          icon: i-simple-icons:visualstudiocode

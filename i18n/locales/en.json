@@ -24,9 +24,6 @@
   },
   "contact": {
     "intro": "If something here sparked an idea, or you'd like to talk about technology, learning, or a project, I'd be happy to hear from you.",
-    "email": "Send me an email",
-    "directTitle": "Direct contact",
-    "directDescription": "Prefer a direct message? Reach me through any of these channels.",
     "form": {
       "title": "Send a message",
       "description": "Fill in the form and your email app will open with the message ready to send.",
@@ -34,15 +31,18 @@
       "namePlaceholder": "Your name",
       "email": "Email",
       "emailPlaceholder": "Your email address",
+      "subject": "Subject",
+      "subjectPlaceholder": "What would you like to talk about?",
       "message": "Message",
       "messagePlaceholder": "Tell me a little about your idea or question...",
       "submit": "Send message",
       "opening": "Opening your email app...",
       "missingEmail": "The contact email is not configured.",
-      "subject": "Message from {name} via your portfolio",
+      "mailSubject": "{subject} — Message from {name}",
       "errors": {
         "name": "Please enter your name.",
         "email": "Please enter a valid email address.",
+        "subject": "Please enter a subject.",
         "message": "Please write a message.",
         "messageLength": "Your message should be at least 10 characters."
       }
@@ -50,7 +50,17 @@
   },
   "social": {
     "label": "Social links",
-    "email": "Email"
+    "email": "Email",
+    "whatsapp": "WhatsApp"
+  },
+  "cv": {
+    "title": "My CV",
+    "description": "Download my CV in the language you prefer.",
+    "download": "Download CV",
+    "chooseLanguage": "Choose a language",
+    "english": "English CV",
+    "spanish": "Spanish CV",
+    "pdf": "PDF"
   },
   "footer": {
     "copyright": "© {year} Portfolio. All rights reserved."

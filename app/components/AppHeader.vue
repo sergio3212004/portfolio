@@ -8,6 +8,7 @@
         :items="localeOptions"
         :aria-label="t('language.select')"
         icon="i-lucide-languages"
+        :ui="{ leadingIcon: 'text-primary' }"
         variant="ghost"
         size="lg"
         class="w-32"
@@ -29,11 +30,11 @@ const localeOptions = computed(() =>
   locales.value.map(({ code, name }) => ({ label: name, value: code }))
 )
 const navigationItems = computed(() => [
-  { label: t('nav.home'), icon: 'i-lucide-house', to: localePath('/') },
-  { label: t('nav.skills'), icon: 'i-lucide-sparkles', to: localePath('/skills') },
-  { label: t('nav.projects'), icon: 'i-lucide-folder-code', to: localePath('/projects') },
-  { label: t('nav.aboutMe'), icon: 'i-lucide-user-round', to: localePath('/about-me') },
-  { label: t('nav.contact'), icon: 'i-lucide-mail', to: localePath('/contact') }
+  { label: t('nav.home'), icon: 'i-lucide-house', to: localePath('/'), ui: { linkLeadingIcon: 'text-primary' } },
+  { label: t('nav.skills'), icon: 'i-lucide-sparkles', to: localePath('/skills'), ui: { linkLeadingIcon: 'text-secondary' } },
+  { label: t('nav.projects'), icon: 'i-lucide-folder-code', to: localePath('/projects'), ui: { linkLeadingIcon: 'text-warning' } },
+  { label: t('nav.aboutMe'), icon: 'i-lucide-user-round', to: localePath('/about-me'), ui: { linkLeadingIcon: 'text-info' } },
+  { label: t('nav.contact'), icon: 'i-lucide-mail', to: localePath('/contact'), ui: { linkLeadingIcon: 'text-success' } }
 ])
 
 </script>

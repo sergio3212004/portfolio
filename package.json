@@ -42,6 +42,7 @@
   },
   "devDependencies": {
     "@iconify-json/lucide": "^1.2.151",
+    "@iconify-json/simple-icons": "^1.2.101",
     "@nuxt/fonts": "^1.2.0"
   }
 }

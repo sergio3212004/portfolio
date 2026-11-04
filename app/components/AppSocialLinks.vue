@@ -2,7 +2,7 @@
   <nav
     v-if="socials.length"
     :aria-label="t('social.label')"
-    class="fixed left-5 top-1/2 z-40 hidden -translate-y-1/2 min-[1360px]:flex"
+    class="fixed left-1 top-1/2 z-40 hidden -translate-y-1/2 min-[1024px]:flex"
   >
     <div class="relative flex flex-col items-center gap-2">
       <span class="absolute -inset-y-4 left-1/2 w-px -translate-x-1/2 bg-accented" aria-hidden="true" />
@@ -19,9 +19,10 @@
           :icon="social.icon"
           :aria-label="social.label"
           :title="social.label"
+          :ui="{ leadingIcon: social.iconClass }"
           variant="ghost"
           color="neutral"
-          size="lg"
+          size="sm"
           square
         />
       </div>
@@ -41,7 +42,8 @@ const socials = computed(() => {
   if (contact.value.github) {
     items.push({
       label: 'GitHub',
-      icon: 'i-lucide-github',
+      icon: 'i-simple-icons:github',
+      iconClass: 'text-primary',
       to: contact.value.github,
       external: true
     })
@@ -50,16 +52,32 @@ const socials = computed(() => {
   if (contact.value.linkedin) {
     items.push({
       label: 'LinkedIn',
-      icon: 'i-lucide-linkedin',
+      icon: 'i-simple-icons:linkedin',
+      iconClass: 'text-info',
       to: contact.value.linkedin,
       external: true
     })
   }
 
+  if (contact.value.phone) {
+    const digits = contact.value.phone.replace(/\D/g, '')
+
+    if (digits) {
+      items.push({
+        label: t('social.whatsapp'),
+        icon: 'i-simple-icons:whatsapp',
+        iconClass: 'text-success',
+        to: `https://wa.me/${digits}`,
+        external: true
+      })
+    }
+  }
+
   if (contact.value.email) {
     items.push({
       label: t('social.email'),
-      icon: 'i-lucide-mail',
+      icon: 'i-simple-icons:gmail',
+      iconClass: 'text-secondary',
       to: `mailto:${contact.value.email}`,
       external: false
     })

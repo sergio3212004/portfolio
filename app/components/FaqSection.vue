@@ -2,7 +2,7 @@
   <section aria-labelledby="faq-heading">
     <header class="max-w-3xl">
       <h2 id="faq-heading" class="flex items-center gap-3 text-3xl font-bold tracking-tight text-highlighted sm:text-4xl">
-        <span class="flex size-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+        <span class="flex size-11 shrink-0 items-center justify-center rounded-xl bg-warning/10 text-warning">
           <Icon name="i-lucide-circle-help" class="size-6" aria-hidden="true" />
         </span>
         {{ title }}
@@ -17,7 +17,8 @@
         root: 'space-y-3',
         item: 'border-b-0 bg-elevated/40 px-6',
         trigger: 'py-5 text-lg font-semibold',
-        body: 'pb-6 text-base leading-7 text-muted'
+        body: 'pb-6 text-base leading-7 text-muted',
+        leadingIcon: 'text-warning'
       }"
     />
   </section>

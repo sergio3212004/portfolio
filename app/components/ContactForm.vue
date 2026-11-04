@@ -15,6 +15,7 @@
             v-model="state.name"
             :placeholder="t('contact.form.namePlaceholder')"
             leading-icon="i-lucide-user"
+            :ui="{ leadingIcon: 'text-secondary' }"
             autocomplete="name"
             size="lg"
             class="w-full"
@@ -27,12 +28,24 @@
             type="email"
             :placeholder="t('contact.form.emailPlaceholder')"
             leading-icon="i-lucide-mail"
+            :ui="{ leadingIcon: 'text-primary' }"
             autocomplete="email"
             size="lg"
             class="w-full"
           />
         </UFormField>
       </div>
+
+      <UFormField :label="t('contact.form.subject')" name="subject" required>
+        <UInput
+          v-model="state.subject"
+          :placeholder="t('contact.form.subjectPlaceholder')"
+          leading-icon="i-lucide-tag"
+          :ui="{ leadingIcon: 'text-warning' }"
+          size="lg"
+          class="w-full"
+        />
+      </UFormField>
 
       <UFormField :label="t('contact.form.message')" name="message" required>
         <UTextarea
@@ -57,6 +70,7 @@ import type { FormSubmitEvent } from '@nuxt/ui'
 type ContactFormState = {
   name: string
   email: string
+  subject: string
   message: string
 }
 
@@ -67,6 +81,7 @@ const toast = useToast()
 const state = reactive<ContactFormState>({
   name: '',
   email: '',
+  subject: '',
   message: ''
 })
 
@@ -79,6 +94,10 @@ function validate(input: Partial<ContactFormState>) {
 
   if (!input.email?.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.email)) {
     errors.push({ name: 'email', message: t('contact.form.errors.email') })
+  }
+
+  if (!input.subject?.trim()) {
+    errors.push({ name: 'subject', message: t('contact.form.errors.subject') })
   }
 
   if (!input.message?.trim()) {
@@ -96,11 +115,11 @@ function onSubmit(event: FormSubmitEvent<ContactFormState>) {
     return
   }
 
-  const { name, email, message } = event.data
-  const subject = t('contact.form.subject', { name })
+  const { name, email, subject, message } = event.data
+  const mailSubject = t('contact.form.mailSubject', { subject, name })
   const body = `${message}\n\n${name}\n${email}`
 
-  window.location.href = `mailto:${contact.value.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+  window.location.href = `mailto:${contact.value.email}?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(body)}`
   toast.add({ title: t('contact.form.opening'), color: 'info' })
 }
 </script>

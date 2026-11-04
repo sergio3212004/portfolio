@@ -17,6 +17,7 @@
         <UButton :to="localePath('/about-me')" icon="i-lucide-user-round" size="lg" color="neutral" variant="ghost">
           {{ t('home.aboutCta') }}
         </UButton>
+        <CvDownload />
       </div>
     </div>
 

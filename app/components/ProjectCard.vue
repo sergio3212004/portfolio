@@ -12,9 +12,10 @@
     <p class="mt-5 text-lg leading-8 text-toned">{{ project.description }}</p>
     <div class="mt-5 flex flex-wrap gap-2">
       <UBadge
-        v-for="technology in project.technologies"
+        v-for="(technology, index) in project.technologies"
         :key="technology"
-        leading-icon="i-lucide-code"
+        :leading-icon="technologyIcon(technology)"
+        :ui="{ leadingIcon: technologyIconClass(index) }"
         color="neutral"
         variant="soft"
         size="lg"
@@ -27,7 +28,7 @@
         v-if="project.repository"
         :to="project.repository"
         target="_blank"
-        icon="i-lucide-github"
+        icon="i-simple-icons:github"
         color="primary"
         variant="soft"
         size="lg"
@@ -62,4 +63,40 @@ defineProps<{
 }>()
 
 const { t } = useI18n()
+
+const technologyIcons: Record<string, string> = {
+  Nuxt: 'i-simple-icons:nuxt',
+  Vue: 'i-simple-icons:vuedotjs',
+  TypeScript: 'i-simple-icons:typescript',
+  JavaScript: 'i-simple-icons:javascript',
+  HTML: 'i-simple-icons:html5',
+  CSS: 'i-simple-icons:css3',
+  'Tailwind CSS': 'i-simple-icons:tailwindcss',
+  'Node.js': 'i-simple-icons:nodedotjs',
+  Git: 'i-simple-icons:git',
+  GitHub: 'i-simple-icons:github',
+  Bun: 'i-simple-icons:bun',
+  'VS Code': 'i-simple-icons:visualstudiocode',
+  Nitro: 'i-lucide:zap',
+  'Nuxt UI': 'i-lucide:layout-template',
+  'Nuxt Content': 'i-lucide:file-text',
+  'REST APIs': 'i-lucide:webhook'
+}
+
+const accents = [
+  'text-primary',
+  'text-secondary',
+  'text-success',
+  'text-info',
+  'text-warning',
+  'text-error'
+]
+
+function technologyIcon(technology: string) {
+  return technologyIcons[technology] ?? 'i-lucide:code'
+}
+
+function technologyIconClass(index: number) {
+  return accents[index % accents.length]
+}
 </script>
