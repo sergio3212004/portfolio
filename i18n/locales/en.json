@@ -35,7 +35,8 @@
     "details": "Explore the project",
     "role": "My contribution",
     "challenge": "The challenge",
-    "outcome": "The solution"
+    "outcome": "The solution",
+    "imagePlaceholder": "Example image · Actual screenshot coming soon"
   },
   "contact": {
     "intro": "If something here sparked an idea, or you'd like to talk about technology, learning, or a project, I'd be happy to hear from you.",

@@ -93,6 +93,7 @@ const projectSchema = z.object({
   sample: z.boolean().default(false),
   image: z.string().optional(),
   imageAlt: z.string().optional(),
+  imagePlaceholder: z.boolean().default(false),
   role: z.string().optional(),
   challenge: z.string().optional(),
   outcome: z.string().optional(),

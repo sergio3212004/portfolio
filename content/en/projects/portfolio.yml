@@ -1,9 +1,9 @@
 # Contenido de ejemplo editable / Editable sample content
-order: 1
+order: 3
 title: "Personal portfolio"
 description: "A space to present projects, share my process, and connect with others."
 status: "Concept"
-featured: true
+featured: false
 sample: true
 image: "/images/projects/portfolio.svg"
 imageAlt: "Illustrative mockup of Personal portfolio"

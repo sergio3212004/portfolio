@@ -1,0 +1,12 @@
+# Reemplaza image con la ruta de tu captura y cambia imagePlaceholder a false.
+order: 1
+title: "Political Science and Governance — UNT"
+description: "Institutional website for the School of Political Science and Governance at the National University of Trujillo. Presents academic information, faculty, news and an interactive curriculum, with a reusable structure for other schools."
+status: "University project"
+featured: true
+sample: false
+image: "/images/projects/portfolio.svg"
+imageAlt: "Example image; actual screenshot coming soon"
+imagePlaceholder: true
+technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "React Flow"]
+repository: "https://github.com/sergio3212004/pagina-ciencia-politica-unt"

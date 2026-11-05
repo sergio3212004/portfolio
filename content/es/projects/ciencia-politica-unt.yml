@@ -1,0 +1,12 @@
+# Reemplaza image con la ruta de tu captura y cambia imagePlaceholder a false.
+order: 1
+title: "Ciencia Política y Gobernabilidad — UNT"
+description: "Sitio web institucional de la Escuela de Ciencia Política y Gobernabilidad de la Universidad Nacional de Trujillo. Presenta información académica, docentes, noticias y una malla curricular interactiva, con una estructura reutilizable para otras escuelas."
+status: "Proyecto universitario"
+featured: true
+sample: false
+image: "/images/projects/portfolio.svg"
+imageAlt: "Imagen de ejemplo; captura real pendiente"
+imagePlaceholder: true
+technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "React Flow"]
+repository: "https://github.com/sergio3212004/pagina-ciencia-politica-unt"

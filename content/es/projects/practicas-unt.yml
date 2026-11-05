@@ -1,0 +1,12 @@
+# Reemplaza image con la ruta de tu captura y cambia imagePlaceholder a false.
+order: 2
+title: "Sistema de prácticas preprofesionales — UNT"
+description: "Aplicación web para gestionar y monitorear las prácticas preprofesionales de la Escuela de Informática de la Universidad Nacional de Trujillo. Incluye registro de empresas con consulta de RUC y autocompletado de datos, además de ingreso manual cuando el servicio no está disponible."
+status: "Proyecto universitario"
+featured: true
+sample: false
+image: "/images/projects/atlas.svg"
+imageAlt: "Imagen de ejemplo; captura real pendiente"
+imagePlaceholder: true
+technologies: ["PHP", "Laravel", "PostgreSQL", "Vite"]
+repository: "https://github.com/sergio3212004/sistema-practicas-unt"

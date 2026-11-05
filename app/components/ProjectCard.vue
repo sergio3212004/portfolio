@@ -2,6 +2,7 @@
   <article class="project-card min-w-0 border border-default bg-muted" :class="{ 'project-featured': featured }">
     <div v-if="project.image" class="project-image overflow-hidden border-b border-default">
       <img :src="project.image" :alt="project.imageAlt || project.title" width="960" height="640" loading="lazy" decoding="async" class="aspect-[3/2] w-full object-cover" />
+      <p v-if="project.imagePlaceholder" class="px-5 py-3 text-xs text-muted sm:px-7">{{ t('projects.imagePlaceholder') }}</p>
     </div>
     <div class="min-w-0 p-5 sm:p-7">
       <p v-if="project.sample" class="mb-4 font-mono text-xs text-muted">{{ t('projects.sample') }}</p>
@@ -79,6 +80,7 @@ defineProps<{
     technologies: string[]
     image?: string
     imageAlt?: string
+    imagePlaceholder?: boolean
     sample?: boolean
     role?: string
     challenge?: string
@@ -91,6 +93,12 @@ defineProps<{
 const { t } = useI18n()
 
 const technologyIcons: Record<string, string> = {
+  React: 'i-simple-icons:react',
+  'React Flow': 'i-lucide:workflow',
+  Vite: 'i-simple-icons:vite',
+  PHP: 'i-simple-icons:php',
+  Laravel: 'i-simple-icons:laravel',
+  PostgreSQL: 'i-simple-icons:postgresql',
   Nuxt: 'i-simple-icons:nuxt',
   Vue: 'i-simple-icons:vuedotjs',
   TypeScript: 'i-simple-icons:typescript',

@@ -35,7 +35,8 @@
     "details": "Explorar el proyecto",
     "role": "Mi participación",
     "challenge": "El reto",
-    "outcome": "La solución"
+    "outcome": "La solución",
+    "imagePlaceholder": "Imagen de ejemplo · Captura real próximamente"
   },
   "contact": {
     "intro": "Si algo de aquí te dio una idea, o quieres conversar sobre tecnología, aprendizaje o algún proyecto, me encantará saber de ti.",
