@@ -1,7 +1,7 @@
-currentStatus: Computer Science student · learning by building
-heroTitle: Curious about technology. Focused on what I can create with it.
-heroSubtitle: I'm a Computer Science student building projects as I learn.
-heroDescription: This is my space to share what I'm working on, what I'm learning, and the ideas that make me curious. I'm at the beginning of my journey, and I believe the best way to grow is to keep building, asking questions, and sharing the process.
+currentStatus: Computer Science student
+heroTitle: From curiosity to code.
+heroSubtitle: Learning by building digital experiences.
+heroDescription: I explore ideas, solve problems, and share what I discover along the way. Take a look at my projects and how I build them.
 heroCta: Explore my projects
 careerTitle: Studying Computer Science
 careerDescription: >-
@@ -46,3 +46,15 @@ faqs:
   - question: Can I contact you about a project or idea?
     answer: >-
       Yes. I’m always open to thoughtful conversations about technology, learning, and projects. Visit my Contact page for the channels I’ve chosen to share.
+
+# Sample milestones: replace periods and text with your own journey.
+milestones:
+  - period: First steps
+    title: Understanding the foundations
+    description: "Example: algorithms, data structures, and my first programs. Learning to break a problem down before writing code."
+  - period: Right now
+    title: Learning by doing
+    description: "Example: bringing small ideas to the web, exploring new tools, and documenting each decision."
+  - period: Up next
+    title: Building with others
+    description: "Example: collaborating on a project and growing through practice and exchanging ideas."

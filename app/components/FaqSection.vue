@@ -15,8 +15,8 @@
       class="mt-10"
       :ui="{
         root: 'space-y-3',
-        item: 'border-b-0 bg-elevated/40 px-6',
-        trigger: 'py-5 text-lg font-semibold',
+        item: 'border-b-0 bg-elevated/40 px-4 sm:px-6',
+        trigger: 'py-5 text-left text-base sm:text-lg font-semibold',
         body: 'pb-6 text-base leading-7 text-muted',
         leadingIcon: 'text-warning'
       }"

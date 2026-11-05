@@ -1,0 +1,13 @@
+# Contenido de ejemplo editable / Editable sample content
+order: 2
+title: "Focus — Organizador de tareas"
+description: "Concepto de una aplicación para organizar pendientes y concentrarse en lo importante."
+status: "Concepto"
+featured: true
+sample: true
+image: "/images/projects/focus.svg"
+imageAlt: "Maqueta ilustrativa de Focus — Organizador de tareas"
+technologies: ["Vue", "TypeScript", "Tailwind CSS"]
+role: "Diseño del flujo de tareas y desarrollo de componentes reutilizables."
+challenge: "Texto de ejemplo: presentar la información de forma clara y mantener una experiencia cómoda tanto en escritorio como en móvil."
+outcome: "Texto de ejemplo: una interfaz adaptable con jerarquía visual, navegación sencilla y componentes consistentes. Reemplaza este texto con tu solución y aprendizajes reales."

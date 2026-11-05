@@ -1,62 +1,88 @@
 <template>
-  <UCard variant="soft" :ui="{ root: 'divide-y-0', body: 'p-6 sm:p-8' }" class="h-full">
-    <div class="flex items-start justify-between gap-4">
-      <h3 class="flex items-start gap-2.5 text-2xl font-semibold text-highlighted">
-        <Icon name="i-lucide-folder-code" class="mt-0.5 size-6 shrink-0 text-primary" aria-hidden="true" />
-        {{ project.title }}
-      </h3>
-      <UBadge color="warning" variant="soft" size="lg" leading-icon="i-lucide-circle-dot">
-        {{ project.status }}
-      </UBadge>
+  <article class="project-card min-w-0 border border-default bg-muted" :class="{ 'project-featured': featured }">
+    <div v-if="project.image" class="project-image overflow-hidden border-b border-default">
+      <img :src="project.image" :alt="project.imageAlt || project.title" width="960" height="640" loading="lazy" decoding="async" class="aspect-[3/2] w-full object-cover" />
     </div>
-    <p class="mt-5 text-lg leading-8 text-toned">{{ project.description }}</p>
-    <div class="mt-5 flex flex-wrap gap-2">
-      <UBadge
-        v-for="(technology, index) in project.technologies"
-        :key="technology"
-        :leading-icon="technologyIcon(technology)"
-        :ui="{ leadingIcon: technologyIconClass(index) }"
-        color="neutral"
-        variant="soft"
-        size="lg"
-      >
-        {{ technology }}
-      </UBadge>
+    <div class="min-w-0 p-5 sm:p-7">
+      <p v-if="project.sample" class="mb-4 font-mono text-xs text-muted">{{ t('projects.sample') }}</p>
+      <div class="flex flex-wrap items-start justify-between gap-3">
+        <h3 class="flex items-start gap-2.5 text-xl font-semibold sm:text-2xl text-highlighted">
+          <Icon name="i-lucide-folder-code" class="mt-0.5 size-6 shrink-0 text-primary" aria-hidden="true" />
+          {{ project.title }}
+        </h3>
+        <UBadge color="warning" variant="soft" size="lg" leading-icon="i-lucide-circle-dot">
+          {{ project.status }}
+        </UBadge>
+      </div>
+      <p class="mt-4 text-base leading-7 text-toned">{{ project.description }}</p>
+      <div class="mt-5 flex flex-wrap gap-2">
+        <UBadge
+          v-for="(technology, index) in project.technologies"
+          :key="technology"
+          :leading-icon="technologyIcon(technology)"
+          :ui="{ leadingIcon: technologyIconClass(index) }"
+          color="neutral"
+          variant="soft"
+          size="lg"
+        >
+          {{ technology }}
+        </UBadge>
+      </div>
+      <div v-if="project.repository || project.demo" class="mt-6 flex flex-wrap gap-3">
+        <UButton
+          v-if="project.repository"
+          :to="project.repository"
+          target="_blank"
+          rel="noopener noreferrer"
+          icon="i-simple-icons:github"
+          color="primary"
+          variant="soft"
+          size="lg"
+        >
+          {{ t('projects.source') }}
+        </UButton>
+        <UButton
+          v-if="project.demo"
+          :to="project.demo"
+          target="_blank"
+          rel="noopener noreferrer"
+          icon="i-lucide-arrow-up-right"
+          color="neutral"
+          variant="soft"
+          size="lg"
+        >
+          {{ t('projects.demo') }}
+        </UButton>
+      </div>
+      <details v-if="project.role || project.challenge || project.outcome" class="mt-6 border-t border-default pt-3">
+        <summary class="cursor-pointer py-3 text-sm font-semibold text-primary">{{ t('projects.details') }}</summary>
+        <dl class="space-y-4 pb-2 pt-3 text-sm leading-6">
+          <template v-for="field in (['role', 'challenge', 'outcome'] as const)" :key="field">
+            <div v-if="project[field]">
+              <dt class="font-semibold text-highlighted">{{ t(`projects.${field}`) }}</dt>
+              <dd class="mt-1 text-muted">{{ project[field] }}</dd>
+            </div>
+          </template>
+        </dl>
+      </details>
     </div>
-    <div v-if="project.repository || project.demo" class="mt-6 flex gap-3">
-      <UButton
-        v-if="project.repository"
-        :to="project.repository"
-        target="_blank"
-        icon="i-simple-icons:github"
-        color="primary"
-        variant="soft"
-        size="lg"
-      >
-        {{ t('projects.source') }}
-      </UButton>
-      <UButton
-        v-if="project.demo"
-        :to="project.demo"
-        target="_blank"
-        icon="i-lucide-arrow-up-right"
-        color="neutral"
-        variant="soft"
-        size="lg"
-      >
-        {{ t('projects.demo') }}
-      </UButton>
-    </div>
-  </UCard>
+  </article>
 </template>
 
 <script setup lang="ts">
 defineProps<{
+  featured?: boolean
   project: {
     title: string
     description: string
     status: string
     technologies: string[]
+    image?: string
+    imageAlt?: string
+    sample?: boolean
+    role?: string
+    challenge?: string
+    outcome?: string
     repository?: string
     demo?: string
   }

@@ -1,3 +1,5 @@
+import { existsSync } from 'node:fs'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
@@ -9,6 +11,12 @@ export default defineNuxtConfig({
     "nuxt-studio",
   ],
   css: ["~/assets/css/main.css"],
+  appConfig: {
+    cv: {
+      english: existsSync(new URL('./public/cv/cv-en.pdf', import.meta.url)),
+      spanish: existsSync(new URL('./public/cv/cv-es.pdf', import.meta.url)),
+    },
+  },
   icon: {
     serverBundle: "local",
     clientBundle: {

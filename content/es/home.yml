@@ -1,7 +1,7 @@
-currentStatus: Estudiante de Ciencias de la Computación · aprendiendo al construir
-heroTitle: Me apasiona la tecnología y todo lo que puedo crear con ella.
-heroSubtitle: Soy estudiante de Ciencias de la Computación y desarrollo proyectos mientras aprendo.
-heroDescription: Este es mi espacio para compartir en qué estoy trabajando, qué estoy aprendiendo y qué ideas despiertan mi curiosidad. Estoy al comienzo de mi camino y creo que la mejor forma de crecer es seguir construyendo, haciendo preguntas y compartiendo el proceso.
+currentStatus: Estudiante de Ciencias de la Computación
+heroTitle: De la curiosidad al código.
+heroSubtitle: Aprendo construyendo experiencias digitales.
+heroDescription: Exploro ideas, resuelvo problemas y comparto lo que descubro en el camino. Aquí puedes conocer mis proyectos y cómo los construyo.
 heroCta: Explora mis proyectos
 careerTitle: Estudio Ciencias de la Computación
 careerDescription: >-
@@ -46,3 +46,15 @@ faqs:
   - question: ¿Puedo contactarte sobre un proyecto o una idea?
     answer: >-
       Sí. Siempre estoy abierto a conversaciones interesantes sobre tecnología, aprendizaje y proyectos. Visita mi página de Contacto para ver los canales que he decidido compartir.
+
+# Hitos de ejemplo: reemplaza los períodos y textos con tu trayectoria.
+milestones:
+  - period: Primeros pasos
+    title: Entender los fundamentos
+    description: "Ejemplo: algoritmos, estructuras de datos y mis primeros programas. Aprender a descomponer un problema antes de escribir código."
+  - period: Actualmente
+    title: Aprender haciendo
+    description: "Ejemplo: llevar pequeñas ideas a la web, experimentar con nuevas herramientas y documentar cada decisión."
+  - period: Lo que sigue
+    title: Construir con otras personas
+    description: "Ejemplo: colaborar en un proyecto y seguir creciendo a través de la práctica y el intercambio de ideas."

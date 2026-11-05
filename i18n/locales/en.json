@@ -13,14 +13,29 @@
     "select": "Select language"
   },
   "home": {
-    "projectsCta": "Explore my projects",
-    "aboutCta": "A little about me"
+    "projectsCta": "View projects",
+    "aboutCta": "A little about me",
+    "contactCta": "Let’s talk",
+    "selectedTitle": "Ideas taking shape.",
+    "selectedIntro": "A selection of projects, decisions, and lessons learned.",
+    "allProjects": "All projects",
+    "workLabel": "01 / Selected work",
+    "careerLabel": "02 / Along the way",
+    "visualLabel": "Explore. Build. Iterate.",
+    "visualCaption": "A little code, endless possibilities.",
+    "pauseAnimation": "Pause animation",
+    "playAnimation": "Resume animation"
   },
   "projects": {
     "intro": "Small and growing projects are part of how I learn. Here's what I'm currently working on.",
     "empty": "I'm preparing projects to share here.",
     "source": "View source",
-    "demo": "Live demo"
+    "demo": "Live demo",
+    "sample": "Sample project",
+    "details": "Explore the project",
+    "role": "My contribution",
+    "challenge": "The challenge",
+    "outcome": "The solution"
   },
   "contact": {
     "intro": "If something here sparked an idea, or you'd like to talk about technology, learning, or a project, I'd be happy to hear from you.",
@@ -46,7 +61,11 @@
         "message": "Please write a message.",
         "messageLength": "Your message should be at least 10 characters."
       }
-    }
+    },
+    "ctaTitle": "The next idea starts with a conversation.",
+    "ctaDescription": "Have a project in mind or an opportunity to share? I’d love to hear about it.",
+    "ctaLabel": "Let’s build something",
+    "direct": "You can also find me here"
   },
   "social": {
     "label": "Social links",
@@ -60,9 +79,20 @@
     "chooseLanguage": "Choose a language",
     "english": "English CV",
     "spanish": "Spanish CV",
-    "pdf": "PDF"
+    "pdf": "PDF",
+    "comingSoon": "CV coming soon"
   },
   "footer": {
     "copyright": "© {year} Portfolio. All rights reserved."
+  },
+  "about": {
+    "noteLabel": "Beyond the editor",
+    "portraitPlaceholder": "Always exploring"
+  },
+  "a11y": {
+    "skip": "Skip to content",
+    "menu": "Open menu",
+    "closeMenu": "Close menu",
+    "theme": "Switch theme"
   }
 }

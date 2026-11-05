@@ -13,14 +13,29 @@
     "select": "Seleccionar idioma"
   },
   "home": {
-    "projectsCta": "Explora mis proyectos",
-    "aboutCta": "Un poco sobre mí"
+    "projectsCta": "Ver proyectos",
+    "aboutCta": "Un poco sobre mí",
+    "contactCta": "Hablemos",
+    "selectedTitle": "Ideas que toman forma.",
+    "selectedIntro": "Una selección de proyectos, decisiones y aprendizajes.",
+    "allProjects": "Todos los proyectos",
+    "workLabel": "01 / Proyectos seleccionados",
+    "careerLabel": "02 / En el camino",
+    "visualLabel": "Explorar. Crear. Iterar.",
+    "visualCaption": "Un poco de código, infinitas posibilidades.",
+    "pauseAnimation": "Pausar animación",
+    "playAnimation": "Reanudar animación"
   },
   "projects": {
     "intro": "Los proyectos pequeños y en evolución son parte de mi aprendizaje. Esto es lo que estoy construyendo ahora.",
     "empty": "Estoy preparando proyectos para compartir aquí.",
     "source": "Ver código",
-    "demo": "Ver demo"
+    "demo": "Ver demo",
+    "sample": "Proyecto de ejemplo",
+    "details": "Explorar el proyecto",
+    "role": "Mi participación",
+    "challenge": "El reto",
+    "outcome": "La solución"
   },
   "contact": {
     "intro": "Si algo de aquí te dio una idea, o quieres conversar sobre tecnología, aprendizaje o algún proyecto, me encantará saber de ti.",
@@ -46,7 +61,11 @@
         "message": "Por favor, escribe un mensaje.",
         "messageLength": "Tu mensaje debe tener al menos 10 caracteres."
       }
-    }
+    },
+    "ctaTitle": "La próxima idea empieza con una conversación.",
+    "ctaDescription": "¿Tienes un proyecto en mente o una oportunidad para compartir? Me encantará conocerla.",
+    "ctaLabel": "Construyamos algo",
+    "direct": "También puedes encontrarme aquí"
   },
   "social": {
     "label": "Redes sociales",
@@ -60,9 +79,20 @@
     "chooseLanguage": "Elige un idioma",
     "english": "CV en inglés",
     "spanish": "CV en español",
-    "pdf": "PDF"
+    "pdf": "PDF",
+    "comingSoon": "CV disponible próximamente"
   },
   "footer": {
     "copyright": "© {year} Portfolio. Todos los derechos reservados."
+  },
+  "about": {
+    "noteLabel": "Fuera del editor",
+    "portraitPlaceholder": "Siempre explorando"
+  },
+  "a11y": {
+    "skip": "Saltar al contenido",
+    "menu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "theme": "Cambiar tema"
   }
 }

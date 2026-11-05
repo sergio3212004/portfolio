@@ -14,3 +14,6 @@ interests:
     icon: i-lucide-lightbulb
   - name: Explorar nuevas herramientas y enfoques
     icon: i-lucide-compass
+
+# Agrega portrait: /images/tu-foto.webp y portraitAlt para mostrar tu foto.
+personalNote: "Texto de ejemplo: fuera del código, disfruto descubrir música, salir a caminar y encontrar inspiración en las pequeñas cosas. Este espacio es para contar algo que te represente."

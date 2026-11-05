@@ -1,10 +1,13 @@
+# Contenido de ejemplo editable / Editable sample content
 order: 1
-title: Personal portfolio
-description: This portfolio is an ongoing project where I’m learning to build a bilingual website, organize editable content, and present my work clearly.
-status: In progress
-technologies:
-  - Nuxt
-  - Vue
-  - TypeScript
-  - Nuxt UI
-  - Nuxt Content
+title: "Personal portfolio"
+description: "A space to present projects, share my process, and connect with others."
+status: "Concept"
+featured: true
+sample: true
+image: "/images/projects/portfolio.svg"
+imageAlt: "Illustrative mockup of Personal portfolio"
+technologies: ["Nuxt", "Vue", "TypeScript", "Nuxt Content"]
+role: "Interface design and development, bilingual navigation, and content structure."
+challenge: "Sample text: presenting information clearly while keeping the experience comfortable on desktop and mobile."
+outcome: "Sample text: a responsive interface with visual hierarchy, simple navigation, and consistent components. Replace this text with your actual solution and lessons learned."

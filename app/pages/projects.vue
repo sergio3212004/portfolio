@@ -16,6 +16,7 @@
         <p class="text-lg leading-8 text-toned">{{ t('projects.empty') }}</p>
       </div>
     </UCard>
+    <ContactCta class="mt-14" />
   </div>
 </template>
 

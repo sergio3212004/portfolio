@@ -14,3 +14,6 @@ interests:
     icon: i-lucide-lightbulb
   - name: Exploring new tools and approaches
     icon: i-lucide-compass
+
+# Add portrait: /images/your-photo.webp and portraitAlt to show your photo.
+personalNote: "Sample text: away from code, I enjoy discovering music, going for walks, and finding inspiration in little things. Use this space to share something that feels like you."

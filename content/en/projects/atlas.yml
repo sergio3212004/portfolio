@@ -1,0 +1,13 @@
+# Contenido de ejemplo editable / Editable sample content
+order: 3
+title: "Atlas — Data explorer"
+description: "A dashboard concept that turns scattered data into a clear, explorable view."
+status: "Concept"
+featured: true
+sample: true
+image: "/images/projects/atlas.svg"
+imageAlt: "Illustrative mockup of Atlas — Data explorer"
+technologies: ["Nuxt", "TypeScript", "REST APIs"]
+role: "Data integration and design of the browsing experience."
+challenge: "Sample text: presenting information clearly while keeping the experience comfortable on desktop and mobile."
+outcome: "Sample text: a responsive interface with visual hierarchy, simple navigation, and consistent components. Replace this text with your actual solution and lessons learned."

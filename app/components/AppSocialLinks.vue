@@ -2,7 +2,7 @@
   <nav
     v-if="socials.length"
     :aria-label="t('social.label')"
-    class="fixed left-1 top-1/2 z-40 hidden -translate-y-1/2 min-[1024px]:flex"
+    class="fixed left-1 top-1/2 z-40 hidden -translate-y-1/2 min-[1440px]:flex"
   >
     <div class="relative flex flex-col items-center gap-2">
       <span class="absolute -inset-y-4 left-1/2 w-px -translate-x-1/2 bg-accented" aria-hidden="true" />

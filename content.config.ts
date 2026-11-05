@@ -9,6 +9,11 @@ const homeSchema = z.object({
   careerTitle: z.string(),
   careerDescription: z.string(),
   careerDetail: z.string(),
+  milestones: z.array(z.object({
+    period: z.string(),
+    title: z.string(),
+    description: z.string()
+  })),
   quotesTitle: z.string(),
   quotesIntro: z.string(),
   quotes: z.array(z.object({
@@ -28,6 +33,9 @@ const homeSchema = z.object({
 const aboutMeSchema = z.object({
   journeyTitle: z.string(),
   journey: z.string(),
+  portrait: z.string().optional(),
+  portraitAlt: z.string().optional(),
+  personalNote: z.string(),
   visionTitle: z.string(),
   vision: z.string(),
   interestsTitle: z.string(),
@@ -81,6 +89,13 @@ const projectSchema = z.object({
   description: z.string(),
   status: z.string(),
   technologies: z.array(z.string()),
+  featured: z.boolean().default(false),
+  sample: z.boolean().default(false),
+  image: z.string().optional(),
+  imageAlt: z.string().optional(),
+  role: z.string().optional(),
+  challenge: z.string().optional(),
+  outcome: z.string().optional(),
   repository: z.string().url().optional().or(z.literal('')),
   demo: z.string().url().optional().or(z.literal(''))
 })

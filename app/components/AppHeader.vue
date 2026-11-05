@@ -1,5 +1,5 @@
 <template>
-  <UHeader :title="t('site.title')" :to="localePath('/')" :ui="{ root: 'border-b-0' }">
+  <UHeader v-model:open="open" :toggle="{ 'aria-label': open ? t('a11y.closeMenu') : t('a11y.menu') }" :title="t('site.title')" :to="localePath('/')" :ui="{ root: 'border-b border-default', container: 'gap-2', left: 'min-w-0 lg:flex-none', right: 'gap-1', title: 'text-lg', toggle: 'min-h-11 min-w-11' }">
     <UNavigationMenu :items="navigationItems" :ui="{ link: 'text-base px-3 py-2' }" />
 
     <template #right>
@@ -11,19 +11,24 @@
         :ui="{ leadingIcon: 'text-primary' }"
         variant="ghost"
         size="lg"
-        class="w-32"
+        class="hidden w-32 sm:flex"
         @update:model-value="setLocale"
       />
-      <UColorModeButton />
+      <UColorModeButton :aria-label="t('a11y.theme')" />
     </template>
 
     <template #body>
+      <div class="mb-6 border-b border-default pb-6 sm:hidden">
+        <label for="mobile-language" class="mb-2 block text-sm text-muted">{{ t('language.select') }}</label>
+        <USelect id="mobile-language" :model-value="locale" :items="localeOptions" size="xl" class="w-full" @update:model-value="setLocale" />
+      </div>
       <UNavigationMenu :items="navigationItems" orientation="vertical" :ui="{ link: 'text-lg py-3' }" />
     </template>
   </UHeader>
 </template>
 
 <script setup lang="ts">
+const open = ref(false)
 const { t, locale, locales, setLocale } = useI18n()
 const localePath = useLocalePath()
 const localeOptions = computed(() =>
