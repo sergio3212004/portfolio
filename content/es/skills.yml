@@ -1,54 +1,11 @@
 title: Habilidades
+english:
+  title: Inglés
+  icon: i-lucide-languages
+  level: B2
+  levelLabel: Intermedio alto
+  description: Me siento cómodo leyendo documentación técnica, escribiendo sobre mi trabajo y manteniendo conversaciones sobre temas cotidianos.
 intro: Un resumen de las tecnologías con las que trabajo, las habilidades blandas que estoy fortaleciendo y mi nivel actual de inglés.
-technical:
-  title: Habilidades técnicas
-  description: Tecnologías y herramientas que he usado mientras aprendo y construyo proyectos.
-  icon: i-lucide-binary
-  groups:
-    - title: Lenguajes
-      icon: i-lucide-file-type
-      items:
-        - name: TypeScript
-          icon: i-simple-icons:typescript
-        - name: JavaScript
-          icon: i-simple-icons:javascript
-        - name: HTML
-          icon: i-simple-icons:html5
-        - name: CSS
-          icon: i-simple-icons:css3
-    - title: Frontend
-      icon: i-lucide-component
-      items:
-        - name: Vue
-          icon: i-simple-icons:vuedotjs
-        - name: Nuxt
-          icon: i-simple-icons:nuxt
-        - name: Nuxt UI
-          icon: i-lucide-layout-template
-        - name: Tailwind CSS
-          icon: i-simple-icons:tailwindcss
-    - title: Backend
-      icon: i-lucide-server
-      items:
-        - name: Node.js
-          icon: i-simple-icons:nodedotjs
-        - name: Nitro
-          icon: i-lucide-zap
-        - name: Nuxt Content
-          icon: i-lucide-file-text
-        - name: APIs REST
-          icon: i-lucide-webhook
-    - title: DevOps y herramientas
-      icon: i-lucide-settings-2
-      items:
-        - name: Git
-          icon: i-simple-icons:git
-        - name: GitHub
-          icon: i-simple-icons:github
-        - name: Bun
-          icon: i-simple-icons:bun
-        - name: VS Code
-          icon: i-simple-icons:visualstudiocode
 soft:
   title: Habilidades blandas
   description: Cómo afronto el aprendizaje, la resolución de problemas y el trabajo con otras personas.
@@ -66,9 +23,74 @@ soft:
       icon: i-lucide-message-circle
     - name: Atención al detalle
       icon: i-lucide-list-checks
-english:
-  title: Inglés
-  icon: i-lucide-languages
-  level: B2
-  levelLabel: Intermedio alto
-  description: Me siento cómodo leyendo documentación técnica, escribiendo sobre mi trabajo y manteniendo conversaciones sobre temas cotidianos.
+technical:
+  title: Habilidades técnicas
+  description: Tecnologías y herramientas que he usado mientras aprendo y construyo proyectos.
+  icon: i-catppuccin:binary
+  groups:
+    - title: Lenguajes
+      icon: i-catppuccin:folder-server-open
+      items:
+        - name: PHP
+          icon: i-catppuccin:php
+        - name: Java
+          icon: i-catppuccin:java
+        - name: JavaScript
+          icon: i-catppuccin:javascript
+        - name: TypeScript
+          icon: i-catppuccin:typescript
+        - name: Python
+          icon: i-catppuccin:python
+        - name: SQL
+          icon: i-catppuccin:database
+    - title: Frontend
+      icon: i-catppuccin:unocss
+      items:
+        - name: React
+          icon: i-catppuccin:javascript-react
+        - name: Next.js
+          icon: i-catppuccin:next
+        - name: Nuxt.js
+          icon: i-catppuccin:nuxt
+        - name: Vue
+          icon: i-catppuccin:vue
+        - name: Tailwind CSS
+          icon: i-catppuccin:tailwind
+        - name: Angular
+          icon: i-catppuccin:angular
+        - name: Blade
+          icon: i-catppuccin:laravel
+    - title: Backend
+      icon: i-catppuccin:folder-server
+      items:
+        - name: Spring Boot
+          icon: i-catppuccin:java
+        - name: PostgreSQL
+          icon: i-catppuccin:database
+        - name: MySQL
+          icon: i-catppuccin:database
+        - name: FastAPI
+          icon: i-catppuccin:folder-api
+        - name: Django
+          icon: i-catppuccin:django
+        - name: Laravel
+          icon: i-catppuccin:laravel
+        - name: ExpressJS
+          icon: i-catppuccin:folder-server
+        - name: Node.js
+          icon: i-catppuccin:folder-node
+        - name: NestJS
+          icon: i-catppuccin:nest
+        - name: MongoDB
+          icon: i-catppuccin:database
+    - title: Herramientas
+      icon: i-catppuccin:config
+      items:
+        - name: Git
+          icon: i-catppuccin:git
+        - name: Linux
+          icon: i-catppuccin:folder-linux
+        - name: Docker
+          icon: i-catppuccin:docker
+        - name: Kubernetes
+          icon: i-catppuccin:folder-kubernetes

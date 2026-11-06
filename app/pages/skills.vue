@@ -9,26 +9,26 @@
 
     <section>
       <h2 class="flex items-center gap-3 text-2xl font-semibold text-highlighted">
-        <Icon :name="skills.technical.icon" class="size-7 shrink-0 text-primary" />
+        <Icon :name="skills.technical.icon" mode="svg" class="size-7 shrink-0" />
         {{ skills.technical.title }}
       </h2>
       <p class="mt-3 max-w-3xl text-lg leading-8 text-toned">{{ skills.technical.description }}</p>
 
       <div class="mt-6 grid gap-4 md:grid-cols-2">
         <UCard
-          v-for="(group, groupIndex) in skills.technical.groups"
+          v-for="group in skills.technical.groups"
           :key="group.title"
           variant="soft"
           :ui="{ root: 'divide-y-0', body: 'p-6 sm:p-8' }"
           class="h-full"
         >
           <h3 class="flex items-center gap-2.5 text-lg font-semibold text-highlighted">
-            <Icon :name="group.icon" :class="['size-5 shrink-0', accents[groupIndex % accents.length]]" />
+            <Icon :name="group.icon" mode="svg" class="size-5 shrink-0" />
             {{ group.title }}
           </h3>
           <div class="mt-4 flex flex-wrap gap-2">
             <UBadge
-              v-for="(item, itemIndex) in group.items"
+              v-for="item in group.items"
               :key="item.name"
               color="neutral"
               variant="soft"
@@ -37,7 +37,8 @@
             >
               <Icon
                 :name="item.icon"
-                :class="['size-4 shrink-0', accents[(groupIndex + itemIndex) % accents.length]]"
+                mode="svg"
+                class="size-4 shrink-0"
               />
               {{ item.name }}
             </UBadge>

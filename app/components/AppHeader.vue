@@ -11,7 +11,7 @@
         :ui="{ leadingIcon: 'text-primary' }"
         variant="ghost"
         size="lg"
-        class="hidden w-32 sm:flex"
+        class="hidden w-max shrink-0 sm:flex"
         @update:model-value="setLocale"
       />
       <UColorModeButton :aria-label="t('a11y.theme')" />
