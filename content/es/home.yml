@@ -1,13 +1,13 @@
-currentStatus: Estudiante de Ciencias de la Computación
+currentStatus: Estudiante de Ingeniería Informática
 heroTitle: De la curiosidad al código.
 heroSubtitle: Aprendo construyendo experiencias digitales.
-heroDescription: Exploro ideas, resuelvo problemas y comparto lo que descubro en el camino. Aquí puedes conocer mis proyectos y cómo los construyo.
+heroDescription: Estudio Ingeniería Informática en la Universidad Nacional de Trujillo. Desde niño me apasiona la computación y sueño con aportar al desarrollo de la ciencia. Hoy convierto esa curiosidad en aprendizaje y proyectos.
 heroCta: Explora mis proyectos
-careerTitle: Estudio Ciencias de la Computación
+careerTitle: Mi formación en Ingeniería Informática
 careerDescription: >-
-  Mi carrera es el lugar donde estoy construyendo las bases para entender el software, no solo para utilizarlo. Estoy aprendiendo a conectar la programación y la resolución de problemas con una perspectiva más amplia: cómo la tecnología puede convertirse en algo útil para las personas.
+  Actualmente estudio la carrera profesional de Ingeniería Informática en la Universidad Nacional de Trujillo, en Perú. La universidad es una parte importante de mi camino: allí construyo las bases para comprender la computación y desarrollar soluciones a través del software.
 careerDetail: >-
-  Todavía estoy explorando en qué área quiero especializarme. Por ahora, me centro en fortalecer mis fundamentos, convertir lo que aprendo en proyectos y mantenerme abierto a los distintos caminos dentro de la informática.
+  Mi interés por la computación nació cuando era niño, junto con el deseo de contribuir al desarrollo de la ciencia. Quiero conectar mi formación universitaria con proyectos que me permitan explorar ideas, resolver problemas y poner lo aprendido al servicio de las personas.
 quotesTitle: Ideas que me inspiran
 quotesIntro: Algunas ideas de informáticos que conectan con la forma en que quiero aprender y crear.
 quotes:
@@ -36,7 +36,7 @@ faqIntro: Un poco más sobre mi momento actual y lo que quiero conseguir.
 faqs:
   - question: ¿Qué estás estudiando?
     answer: >-
-      Estudio Ciencias de la Computación. Estoy desarrollando mis conocimientos de programación y resolución de problemas mientras exploro cómo aplicar esos fundamentos a la creación de software y experiencias web.
+      Estudio la carrera profesional de Ingeniería Informática en la Universidad Nacional de Trujillo, en Perú. Complemento mi formación universitaria con proyectos que me ayudan a llevar la programación y la resolución de problemas a la práctica.
   - question: ¿Tienes experiencia profesional?
     answer: >-
       Todavía no. Actualmente soy estudiante y mi portfolio se centra en proyectos personales y aprendizaje. Veo cada proyecto como una oportunidad para practicar, reflexionar y mejorar.
@@ -47,14 +47,14 @@ faqs:
     answer: >-
       Sí. Siempre estoy abierto a conversaciones interesantes sobre tecnología, aprendizaje y proyectos. Visita mi página de Contacto para ver los canales que he decidido compartir.
 
-# Hitos de ejemplo: reemplaza los períodos y textos con tu trayectoria.
 milestones:
-  - period: Primeros pasos
-    title: Entender los fundamentos
-    description: "Ejemplo: algoritmos, estructuras de datos y mis primeros programas. Aprender a descomponer un problema antes de escribir código."
-  - period: Actualmente
-    title: Aprender haciendo
-    description: "Ejemplo: llevar pequeñas ideas a la web, experimentar con nuevas herramientas y documentar cada decisión."
+  - period: Desde niño
+    title: Curiosidad por la computación
+    description: La computación despertó mi interés por entender cómo funcionan las cosas y mi deseo de aportar al desarrollo de la ciencia.
+  - period: 2022 – Actualmente
+    title: Ingeniería Informática en la UNT
+    description: Curso mi carrera profesional en la Universidad Nacional de Trujillo y complemento mi formación construyendo proyectos de software.
   - period: Lo que sigue
-    title: Construir con otras personas
-    description: "Ejemplo: colaborar en un proyecto y seguir creciendo a través de la práctica y el intercambio de ideas."
+    title: Conectar ciencia y tecnología
+    description: Quiero seguir formándome y crear soluciones que acerquen mi pasión por la computación a mi deseo de contribuir a la ciencia.
+location: Trujillo, Perú

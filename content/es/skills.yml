@@ -94,3 +94,12 @@ technical:
           icon: i-catppuccin:docker
         - name: Kubernetes
           icon: i-catppuccin:folder-kubernetes
+    - title: Desarrollo agéntico con IA
+      icon: i-catppuccin:workflow
+      items:
+        - name: Codex
+          icon: i-simple-icons:openai
+        - name: Claude
+          icon: i-simple-icons:claude
+        - name: OpenCode
+          icon: i-simple-icons:opencode

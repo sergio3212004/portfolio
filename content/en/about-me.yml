@@ -1,19 +1,23 @@
-journeyTitle: The learning journey
+journeyTitle: My journey in computing
 journey: >-
-  I don't have professional experience yet; I'm a student building my foundations one project at a time. I want this portfolio to show the process honestly: what I tried, what I learned, and what I would improve next. As I grow, I'll keep adding projects and lessons here.
+  I am an Informatics Engineering student at Universidad Nacional de Trujillo, based in Trujillo, Peru. Since childhood, I have been passionate about computing: understanding how it works, exploring its possibilities, and discovering what we can create with it. My university education is an important step toward turning that curiosity into knowledge and projects.
 visionTitle: My vision
 vision: >-
-  I want to help create technology that feels useful, thoughtful, and accessible. I’m interested in understanding the people and problems behind a product—not just the code—and in making digital experiences that make everyday things a little better.
-interestsTitle: Things that interest me
+  Since childhood, I have wanted to contribute to science. Today, Informatics Engineering gives me a way to work toward that goal: learning deeply, asking questions, and building tools that help explore ideas and solve problems. I want to grow as a professional while keeping the curiosity that first drew me to computing.
+interestsTitle: What inspires me
 interests:
-  - name: Human-centered technology
-    icon: i-lucide-users
-  - name: Thoughtful digital experiences
-    icon: i-lucide-sparkles
-  - name: Learning how ideas become useful products
-    icon: i-lucide-lightbulb
-  - name: Exploring new tools and approaches
-    icon: i-lucide-compass
+  - name: Music
+    icon: i-lucide-music
+  - name: Nature
+    icon: i-lucide-leaf
+  - name: Walking
+    icon: i-lucide-footprints
+  - name: Animals
+    icon: i-lucide-paw-print
+  - name: Science
+    icon: i-lucide-atom
+  - name: Computing
+    icon: i-lucide-monitor
 
 # Add portrait: /images/your-photo.webp and portraitAlt to show your photo.
-personalNote: "Sample text: away from code, I enjoy discovering music, going for walks, and finding inspiration in little things. Use this space to share something that feels like you."
+personalNote: "Away from code, I enjoy music, nature, and going for walks. I love animals and spending time outdoors, slowing down to observe the world around me. These interests remind me that there is always something to discover, both on and off a screen."

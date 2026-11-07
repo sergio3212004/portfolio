@@ -1,12 +1,14 @@
-# Reemplaza image con la ruta de tu captura y cambia imagePlaceholder a false.
 order: 2
 title: "Pre-professional internship system — UNT"
-description: "Web application to manage and monitor pre-professional internships at the School of Computer Science of the National University of Trujillo. Includes company registration with RUC lookup and automatic data completion, plus manual entry when the service is unavailable."
+description: "Web application to manage and monitor pre-professional internships at the School of Computer Science of the National University of Trujillo. Includes company registration with RUC lookup and automatic data completion, plus manual entry when the service is unavailable. Developed as a university project; no public link is currently available."
 status: "University project"
 featured: true
 sample: false
-image: "/images/projects/atlas.svg"
-imageAlt: "Example image; actual screenshot coming soon"
-imagePlaceholder: true
-technologies: ["PHP", "Laravel", "PostgreSQL", "Vite"]
+image: "/images/projects/practicas-unt-login.png"
+imageAlt: "UNT pre-professional internship system sign-in screen"
+imagePlaceholder: false
+technologies: [ "PHP", "Laravel", "PostgreSQL", "Vite" ]
 repository: "https://github.com/sergio3212004/sistema-practicas-unt"
+screenshots:
+  - src: /images/projects/practicas-unt-dashboard.png
+    alt: UNT internship system teacher dashboard showing classrooms, students, tasks, and submissions

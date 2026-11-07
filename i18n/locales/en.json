@@ -36,7 +36,12 @@
     "role": "My contribution",
     "challenge": "The challenge",
     "outcome": "The solution",
-    "imagePlaceholder": "Example image · Actual screenshot coming soon"
+    "imagePlaceholder": "Example image · Actual screenshot coming soon",
+    "expandImage": "Expand image",
+    "galleryDescription": "Project screenshots. Use the controls to browse them.",
+    "previousImage": "Previous image",
+    "nextImage": "Next image",
+    "visitSite": "Visit website"
   },
   "contact": {
     "intro": "If something here sparked an idea, or you'd like to talk about technology, learning, or a project, I'd be happy to hear from you.",

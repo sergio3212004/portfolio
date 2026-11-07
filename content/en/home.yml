@@ -1,13 +1,13 @@
-currentStatus: Computer Science student
+currentStatus: Informatics Engineering student
 heroTitle: From curiosity to code.
 heroSubtitle: Learning by building digital experiences.
-heroDescription: I explore ideas, solve problems, and share what I discover along the way. Take a look at my projects and how I build them.
+heroDescription: I study Informatics Engineering at Universidad Nacional de Trujillo. Since childhood, I have been passionate about computing and dreamed of contributing to science. Today, I turn that curiosity into learning and projects.
 heroCta: Explore my projects
-careerTitle: Studying Computer Science
+careerTitle: My Informatics Engineering education
 careerDescription: >-
-  My degree is where I’m building the foundations to understand software, not just use it. I’m learning to connect programming and problem-solving with the bigger picture: how technology can become something useful for people.
+  I am currently pursuing a degree in Informatics Engineering at Universidad Nacional de Trujillo in Peru. University is an important part of my journey: it is where I build the foundations to understand computing and develop solutions through software.
 careerDetail: >-
-  I’m still exploring which area I want to specialize in. For now, I’m focused on strengthening my fundamentals, turning what I learn into projects, and staying open to the different paths within computer science.
+  My interest in computing began in childhood, alongside a desire to contribute to science. I want to connect my university education with projects that let me explore ideas, solve problems, and use what I learn to help people.
 quotesTitle: Ideas that inspire me
 quotesIntro: A few thoughts from computer scientists that connect with how I want to learn and build.
 quotes:
@@ -36,7 +36,7 @@ faqIntro: A little more about where I am and what I’m working toward.
 faqs:
   - question: What are you studying?
     answer: >-
-      I’m studying Computer Science. I’m developing my understanding of programming and problem-solving while exploring how those foundations apply to building software and web experiences.
+      I am pursuing a degree in Informatics Engineering at Universidad Nacional de Trujillo in Peru. I complement my university education with projects that help me put programming and problem-solving into practice.
   - question: Do you have professional experience?
     answer: >-
       Not yet. I’m currently a student, and my portfolio is focused on personal projects and learning. I see each project as an opportunity to practice, reflect, and improve.
@@ -47,14 +47,14 @@ faqs:
     answer: >-
       Yes. I’m always open to thoughtful conversations about technology, learning, and projects. Visit my Contact page for the channels I’ve chosen to share.
 
-# Sample milestones: replace periods and text with your own journey.
 milestones:
-  - period: First steps
-    title: Understanding the foundations
-    description: "Example: algorithms, data structures, and my first programs. Learning to break a problem down before writing code."
-  - period: Right now
-    title: Learning by doing
-    description: "Example: bringing small ideas to the web, exploring new tools, and documenting each decision."
+  - period: Since childhood
+    title: Curiosity about computing
+    description: Computing sparked my interest in understanding how things work and my desire to contribute to science.
+  - period: 2022 – Present
+    title: Informatics Engineering at UNT
+    description: I am pursuing my degree at Universidad Nacional de Trujillo and complementing my studies by building software projects.
   - period: Up next
-    title: Building with others
-    description: "Example: collaborating on a project and growing through practice and exchanging ideas."
+    title: Connecting science and technology
+    description: I want to keep learning and create solutions that connect my passion for computing with my desire to contribute to science.
+location: Trujillo, Peru

@@ -4,6 +4,10 @@
       <p class="flex items-center gap-2.5 text-sm font-medium text-toned">
         <span class="size-2 shrink-0 bg-primary" aria-hidden="true" />{{ currentStatus }}
       </p>
+      <p class="mt-3 flex items-center gap-2 text-sm text-muted">
+        <Icon name="i-lucide-map-pin" class="size-4 shrink-0" aria-hidden="true" />
+        {{ location }}
+      </p>
       <h1 class="mt-6 max-w-3xl text-[clamp(2.75rem,6vw,5.5rem)] leading-[1.05] font-bold tracking-tight text-highlighted">{{ title }}</h1>
       <p class="mt-6 max-w-xl text-xl leading-8 text-toned sm:text-2xl">{{ subtitle }}</p>
       <p class="mt-4 max-w-xl text-base leading-7 text-muted sm:text-lg">{{ description }}</p>
@@ -23,7 +27,7 @@
   </section>
 </template>
 <script setup lang="ts">
-defineProps<{ currentStatus: string, title: string, subtitle: string, description: string }>()
+defineProps<{ currentStatus: string, location: string, title: string, subtitle: string, description: string }>()
 const { t } = useI18n()
 const localePath = useLocalePath()
 </script>

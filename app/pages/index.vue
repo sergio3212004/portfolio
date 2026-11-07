@@ -1,6 +1,6 @@
 <template>
   <div v-if="home" class="space-y-16 sm:space-y-24">
-    <HeroSection :current-status="home.currentStatus" :title="home.heroTitle" :subtitle="home.heroSubtitle" :description="home.heroDescription" />
+    <HeroSection :current-status="home.currentStatus" :location="home.location" :title="home.heroTitle" :subtitle="home.heroSubtitle" :description="home.heroDescription" />
     <RevealSection v-if="featuredProjects.length">
       <section aria-labelledby="selected-heading">
         <div class="mb-8 flex flex-wrap items-end justify-between gap-4">

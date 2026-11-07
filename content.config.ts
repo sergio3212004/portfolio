@@ -2,6 +2,7 @@ import { defineCollection, defineContentConfig, z } from '@nuxt/content'
 
 const homeSchema = z.object({
   currentStatus: z.string(),
+  location: z.string(),
   heroTitle: z.string(),
   heroSubtitle: z.string(),
   heroDescription: z.string(),
@@ -94,6 +95,10 @@ const projectSchema = z.object({
   image: z.string().optional(),
   imageAlt: z.string().optional(),
   imagePlaceholder: z.boolean().default(false),
+  screenshots: z.array(z.object({
+    src: z.string(),
+    alt: z.string()
+  })).optional(),
   role: z.string().optional(),
   challenge: z.string().optional(),
   outcome: z.string().optional(),

@@ -1,19 +1,23 @@
-journeyTitle: Mi camino de aprendizaje
+journeyTitle: Mi camino en la informática
 journey: >-
-  Todavía no tengo experiencia profesional; soy estudiante y voy construyendo mis fundamentos proyecto a proyecto. Quiero que este portfolio muestre el proceso con honestidad: qué probé, qué aprendí y qué mejoraría después. A medida que avance, iré añadiendo proyectos y aprendizajes.
+  Soy estudiante de la carrera profesional de Ingeniería Informática en la Universidad Nacional de Trujillo y vivo en Trujillo, Perú. Desde niño me ha apasionado la computación: entender cómo funciona, explorar sus posibilidades y descubrir lo que podemos crear con ella. Mi formación universitaria es un paso importante para convertir esa curiosidad en conocimientos y proyectos.
 visionTitle: Mi visión
 vision: >-
-  Quiero contribuir a crear tecnología útil, reflexiva y accesible. Me interesa entender a las personas y los problemas detrás de un producto, no solo el código, y crear experiencias digitales que puedan mejorar un poco las cosas cotidianas.
-interestsTitle: Temas que me interesan
+  Desde niño he querido aportar al desarrollo de la ciencia. Hoy encuentro en la Ingeniería Informática una manera de acercarme a ese propósito: aprender a fondo, hacer preguntas y construir herramientas que ayuden a explorar ideas y resolver problemas. Quiero crecer como profesional sin perder la curiosidad que me llevó a interesarme por la computación.
+interestsTitle: Lo que me inspira
 interests:
-  - name: Tecnología centrada en las personas
-    icon: i-lucide-users
-  - name: Experiencias digitales bien pensadas
-    icon: i-lucide-sparkles
-  - name: Cómo las ideas se convierten en productos útiles
-    icon: i-lucide-lightbulb
-  - name: Explorar nuevas herramientas y enfoques
-    icon: i-lucide-compass
+  - name: Música
+    icon: i-lucide-music
+  - name: Naturaleza
+    icon: i-lucide-leaf
+  - name: Caminatas
+    icon: i-lucide-footprints
+  - name: Animales
+    icon: i-lucide-paw-print
+  - name: Ciencia
+    icon: i-lucide-atom
+  - name: Computación
+    icon: i-lucide-monitor
 
 # Agrega portrait: /images/tu-foto.webp y portraitAlt para mostrar tu foto.
-personalNote: "Texto de ejemplo: fuera del código, disfruto descubrir música, salir a caminar y encontrar inspiración en las pequeñas cosas. Este espacio es para contar algo que te represente."
+personalNote: "Fuera del código, disfruto la música, la naturaleza y salir a hacer caminatas. Me gustan los animales y esos momentos al aire libre que invitan a observar con calma. Son intereses que me acompañan y me recuerdan que siempre hay algo por descubrir, tanto dentro como fuera de una pantalla."

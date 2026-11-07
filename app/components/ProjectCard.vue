@@ -1,6 +1,16 @@
 <template>
   <article class="project-card min-w-0 border border-default bg-muted" :class="{ 'project-featured': featured }">
-    <div v-if="project.image" class="project-image overflow-hidden border-b border-default">
+    <div v-if="project.screenshots?.length" class="project-image border-b border-default">
+      <UCarousel v-slot="{ item, index }" :items="projectImages" arrows dots :prev="{ 'aria-label': t('projects.previousImage') }" :next="{ 'aria-label': t('projects.nextImage') }" :ui="{ dots: 'bottom-0 gap-0', dot: 'flex size-11 items-center justify-center bg-transparent before:size-1.5 before:rounded-full before:bg-accented data-[state=active]:bg-transparent data-[state=active]:before:bg-inverted', prev: 'start-2 sm:start-2', next: 'end-2 sm:end-2' }" class="pb-11">
+        <button type="button" class="group relative block w-full cursor-zoom-in focus-visible:outline-2 focus-visible:outline-primary" :aria-label="`${t('projects.expandImage')}: ${item.alt}`" @click="openImage(index)">
+          <img :src="item.src" :alt="item.alt" width="1920" height="962" loading="lazy" decoding="async" class="aspect-[1920/962] w-full object-contain" />
+          <span class="absolute right-3 top-3 flex size-8 items-center justify-center rounded-full bg-default/90 text-highlighted shadow-sm">
+            <Icon name="i-lucide-expand" class="size-4" aria-hidden="true" />
+          </span>
+        </button>
+      </UCarousel>
+    </div>
+    <div v-else-if="project.image" class="project-image overflow-hidden border-b border-default">
       <img :src="project.image" :alt="project.imageAlt || project.title" width="960" height="640" loading="lazy" decoding="async" class="aspect-[3/2] w-full object-cover" />
       <p v-if="project.imagePlaceholder" class="px-5 py-3 text-xs text-muted sm:px-7">{{ t('projects.imagePlaceholder') }}</p>
     </div>
@@ -52,7 +62,7 @@
           variant="soft"
           size="lg"
         >
-          {{ t('projects.demo') }}
+          {{ t('projects.visitSite') }}
         </UButton>
       </div>
       <details v-if="project.role || project.challenge || project.outcome" class="mt-6 border-t border-default pt-3">
@@ -67,11 +77,21 @@
         </dl>
       </details>
     </div>
+    <UModal v-model:open="galleryOpen" :title="project.title" :description="t('projects.galleryDescription')" :ui="{ content: 'max-w-[96vw] sm:max-w-[96vw]', body: 'p-2 sm:p-4' }">
+      <template #body>
+        <img v-if="activeImage" :src="activeImage.src" :alt="activeImage.alt" class="max-h-[70dvh] w-full object-contain" />
+        <div class="mt-4 flex items-center justify-center gap-4">
+          <UButton :aria-label="t('projects.previousImage')" icon="i-lucide-chevron-left" color="neutral" variant="soft" :disabled="activeImageIndex === 0" @click="activeImageIndex--" />
+          <span class="text-sm text-muted" aria-live="polite">{{ activeImageIndex + 1 }} / {{ projectImages.length }}</span>
+          <UButton :aria-label="t('projects.nextImage')" icon="i-lucide-chevron-right" color="neutral" variant="soft" :disabled="activeImageIndex === projectImages.length - 1" @click="activeImageIndex++" />
+        </div>
+      </template>
+    </UModal>
   </article>
 </template>
 
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
   featured?: boolean
   project: {
     title: string
@@ -81,6 +101,7 @@ defineProps<{
     image?: string
     imageAlt?: string
     imagePlaceholder?: boolean
+    screenshots?: Array<{ src: string, alt: string }>
     sample?: boolean
     role?: string
     challenge?: string
@@ -89,6 +110,20 @@ defineProps<{
     demo?: string
   }
 }>()
+
+const projectImages = computed(() => [
+  ...(props.project.image ? [{ src: props.project.image, alt: props.project.imageAlt || props.project.title }] : []),
+  ...(props.project.screenshots ?? [])
+])
+
+const galleryOpen = ref(false)
+const activeImageIndex = ref(0)
+const activeImage = computed(() => projectImages.value[activeImageIndex.value])
+
+function openImage(index: number) {
+  activeImageIndex.value = index
+  galleryOpen.value = true
+}
 
 const { t } = useI18n()
 

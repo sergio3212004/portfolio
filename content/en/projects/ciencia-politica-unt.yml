@@ -2,11 +2,17 @@
 order: 1
 title: "Political Science and Governance — UNT"
 description: "Institutional website for the School of Political Science and Governance at the National University of Trujillo. Presents academic information, faculty, news and an interactive curriculum, with a reusable structure for other schools."
-status: "University project"
+status: "Live website"
 featured: true
 sample: false
-image: "/images/projects/portfolio.svg"
-imageAlt: "Example image; actual screenshot coming soon"
-imagePlaceholder: true
-technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "React Flow"]
+image: "/images/projects/ciencia-politica-inicio.png"
+imageAlt: "UNT Political Science and Governance homepage"
+imagePlaceholder: false
+technologies: [ "React", "TypeScript", "Vite", "Tailwind CSS", "React Flow" ]
 repository: "https://github.com/sergio3212004/pagina-ciencia-politica-unt"
+demo: https://cienciapolitica.unitru.edu.pe
+screenshots:
+  - src: /images/projects/ciencia-politica-comites.png
+    alt: Political Science School Quality Committee page
+  - src: /images/projects/ciencia-politica-malla.png
+    alt: Political Science interactive curriculum

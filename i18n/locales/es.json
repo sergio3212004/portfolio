@@ -36,7 +36,12 @@
     "role": "Mi participación",
     "challenge": "El reto",
     "outcome": "La solución",
-    "imagePlaceholder": "Imagen de ejemplo · Captura real próximamente"
+    "imagePlaceholder": "Imagen de ejemplo · Captura real próximamente",
+    "expandImage": "Ampliar imagen",
+    "galleryDescription": "Capturas del proyecto. Usa los controles para recorrerlas.",
+    "previousImage": "Imagen anterior",
+    "nextImage": "Siguiente imagen",
+    "visitSite": "Visitar sitio web"
   },
   "contact": {
     "intro": "Si algo de aquí te dio una idea, o quieres conversar sobre tecnología, aprendizaje o algún proyecto, me encantará saber de ti.",
