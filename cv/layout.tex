@@ -1,0 +1,38 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=1.7cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks,unicode]{hyperref}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\setlength{\emergencystretch}{2em}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+\setlist[itemize]{leftmargin=14pt,itemsep=2pt,topsep=3pt,parsep=0pt}
+\urlstyle{same}
+\newcommand{\cvheader}[1]{%
+  \begin{minipage}[c]{0.81\textwidth}
+  {\LARGE\bfseries Sergio Monge}\\[4pt]
+  {\large #1}\\[5pt]
+  Trujillo, Peru\\[2pt]
+  Phone: \mbox{+51968891526}\\[2pt]
+  Email: \mbox{\href{mailto:smonge630@gmail.com}{smonge630@gmail.com}}\\[2pt]
+  \href{https://github.com/sergio3212004}{github.com/sergio3212004}\\[2pt]
+  \href{https://www.linkedin.com/in/sergio-monge-aa2029306}{linkedin.com/in/sergio-monge-aa2029306}
+  \end{minipage}\hfill
+  \begin{minipage}[c]{0.16\textwidth}
+  \centering
+  \IfFileExists{assets/portrait.jpg}{\includegraphics[width=\linewidth,height=3.2cm,keepaspectratio]{assets/portrait.jpg}}{%
+    \IfFileExists{assets/portrait.png}{\includegraphics[width=\linewidth,height=3.2cm,keepaspectratio]{assets/portrait.png}}{%
+      \IfFileExists{assets/sample-portrait.png}{\includegraphics[width=\linewidth,height=3.2cm,keepaspectratio]{assets/sample-portrait.png}}{}}}
+  \end{minipage}\par
+}
+\newcommand{\translatedsection}[2]{\section{#1}{\footnotesize\itshape #2}\par}
+\newcommand{\project}[2]{\textbf{#1}\\{\small #2}\par}

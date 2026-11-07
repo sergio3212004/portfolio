@@ -1,8 +1,8 @@
 # CV downloads
 
-Add the two PDF files used by the portfolio download buttons:
-
 - `cv-en.pdf` — English CV
 - `cv-es.pdf` — Spanish CV
 
-The buttons in the home hero and on the contact page link to `/cv/cv-en.pdf` and `/cv/cv-es.pdf`.
+Editable LaTeX sources and build instructions are in `cv/` at the repository root. Rebuild with `python3 cv/build.py`.
+
+The home and contact download buttons use these PDFs. Restart the development server after first adding them so Nuxt detects availability.

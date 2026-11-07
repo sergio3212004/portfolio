@@ -14,8 +14,8 @@
       <div class="mt-8 flex flex-wrap gap-3">
         <UButton :to="localePath('/projects')" trailing-icon="i-lucide-arrow-up-right" size="lg">{{ t('home.projectsCta') }}</UButton>
         <UButton :to="localePath('/contact')" color="neutral" variant="outline" size="lg">{{ t('home.contactCta') }}</UButton>
+        <CvDownload />
       </div>
-      <div class="mt-3"><CvDownload /></div>
     </div>
     <div class="ascii-stage min-w-0 border border-default bg-muted">
       <div class="flex items-center justify-between gap-3 border-b border-default px-5 py-4 font-mono text-xs text-muted">

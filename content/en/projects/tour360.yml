@@ -1,0 +1,20 @@
+order: 3
+title: "Tour360"
+description: "Collaborative web editor for creating, editing, and publishing interactive 360° virtual tours."
+status: "Project contribution"
+featured: false
+sample: false
+technologies: ["Next.js", "React", "TypeScript", "Three.js", "Supabase", "Tailwind CSS"]
+role: "Contributed to the development of Tour360."
+repository: "https://github.com/NativaMk/tour360-repo"
+demo: "https://esfera360.vercel.app/"
+image: "/images/projects/tour360-home.png"
+imageAlt: "Tour360 homepage presenting interactive virtual tours"
+imagePlaceholder: false
+screenshots:
+  - src: /images/projects/tour360-dashboard.jpeg
+    alt: "Tour360 dashboard listing virtual tour projects"
+  - src: /images/projects/tour360-editor.jpeg
+    alt: "Tour360 panoramic scene editor with scene navigation and properties"
+  - src: /images/projects/tour360-text-editor.jpeg
+    alt: "Tour360 text overlay editing on a panoramic scene"

@@ -129,6 +129,9 @@ const { t } = useI18n()
 
 const technologyIcons: Record<string, string> = {
   React: 'i-simple-icons:react',
+  'Next.js': 'i-simple-icons:nextdotjs',
+  'Three.js': 'i-simple-icons:threedotjs',
+  Supabase: 'i-simple-icons:supabase',
   'React Flow': 'i-lucide:workflow',
   Vite: 'i-simple-icons:vite',
   PHP: 'i-simple-icons:php',

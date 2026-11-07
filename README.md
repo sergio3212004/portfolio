@@ -38,6 +38,10 @@ yarn dev
 bun run dev
 ```
 
+### Nuxt DevTools
+
+DevTools is enabled in `nuxt.config.ts`. Open the Local URL printed by `bun run dev` and press **Shift + Alt + D** (**Shift + Option + D** on macOS) to toggle the panel. If the panel stays hidden, clear the `nuxt-devtools-frame-state` entry in the browser's local storage and reload. DevTools is available in development, not in `bun run preview` or a production deployment.
+
 ## Production
 
 Build the application for production:
@@ -79,7 +83,7 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 El contenido está en `content/es/` y `content/en/`. Actualiza ambas versiones:
 
 - `home.yml`: presentación y `milestones` de la línea de tiempo. Los hitos actuales son ejemplos.
-- `projects/*.yml`: los tres proyectos actuales son ejemplos (`sample: true`). Cambia título, descripción, estado, tecnologías, `role`, `challenge` y `outcome`; añade `repository` y `demo` cuando existan enlaces reales. `featured: true` muestra el proyecto en Inicio (máximo tres, ordenados por `order`). Cambia `sample` a `false` cuando hayas añadido tu información.
+- `projects/*.yml`: los tres proyectos actuales son ejemplos (`sample: true`). Cambia título, descripción, estado, tecnologías, `role`, `challenge` y `outcome`; añade `repository` y `demo` cuando existan enlaces reales. `featured: true` selecciona el proyecto favorito de Inicio (se muestra el primero según `order`). Cambia `sample` a `false` cuando hayas añadido tu información.
 - Las maquetas SVG están en `public/images/projects/`. Para usar una captura real, guarda una imagen en `public/images/projects/` y actualiza `image` (p. ej. `/images/projects/mi-proyecto.webp`) e `imageAlt`. Se recomienda una proporción 3:2.
 - `about-me.yml`: cambia `personalNote` y, opcionalmente, añade `portrait: /images/mi-foto.webp` y `portraitAlt`. Sin foto aparece una ilustración de brújula.
 - `contact.yml`: canales de contacto. El formulario abre la aplicación de correo; no utiliza un servicio de envío.
@@ -90,6 +94,6 @@ El contenido está en `content/es/` y `content/en/`. Actualiza ambas versiones:
 
 La interfaz se adapta desde 320 px, con menú móvil, idioma dentro del menú en pantallas pequeñas, controles táctiles y formularios de al menos 16 px para evitar el zoom automático de iOS. Los enlaces sociales también están disponibles en el pie de página. Los detalles de proyectos usan HTML nativo y funcionan sin depender del hover.
 
-Las animaciones respetan `prefers-reduced-motion`. El donut tiene pausa manual y se detiene fuera de pantalla o cuando la pestaña está oculta. El contenido de las secciones permanece visible si las animaciones o IntersectionObserver no están disponibles.
+Las animaciones respetan `prefers-reduced-motion`. El donut se anima automáticamente y se detiene fuera de pantalla o cuando la pestaña está oculta. El contenido de las secciones permanece visible si las animaciones o IntersectionObserver no están disponibles.
 
 El soporte mínimo de la base Tailwind 4 es Safari 16.4, Chrome 111 y Firefox 128: https://tailwindcss.com/docs/compatibility. Las comprobaciones de tamaños de pantalla en escritorio no sustituyen una prueba en dispositivos iOS/Android reales.

@@ -4,7 +4,7 @@
       icon="i-lucide-download"
       trailing-icon="i-lucide-chevron-down"
       color="neutral"
-      variant="ghost"
+      variant="outline"
       size="lg"
     >
       {{ t('cv.download') }}
@@ -35,7 +35,7 @@ const items = computed(() => [
       icon: 'i-lucide-file-text',
       to: '/cv/cv-en.pdf',
       external: true,
-      download: true
+      download: 'Sergio-Monge-CV-English.pdf'
     },
     {
       label: t('cv.spanish'),
@@ -44,7 +44,7 @@ const items = computed(() => [
       icon: 'i-lucide-file-text',
       to: '/cv/cv-es.pdf',
       external: true,
-      download: true
+      download: 'Sergio-Monge-CV-Espanol.pdf'
     }
   ]
 ])
